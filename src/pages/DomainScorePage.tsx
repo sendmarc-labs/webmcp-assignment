@@ -1,20 +1,11 @@
 import { useState, type FormEvent } from "react";
-import { fixtureFor } from "../fixtures.ts";
-
-const FIXTURE_DELAY_MS = Number(import.meta.env.VITE_FIXTURE_DELAY || 0);
+import { getScore } from "../api/score.ts";
 
 type LookupState =
   | { status: "idle" }
   | { status: "loading" }
   | { status: "error"; message: string }
   | { status: "ok"; data: unknown };
-
-async function fetchScore(domain: string): Promise<unknown> {
-  if (FIXTURE_DELAY_MS > 0) {
-    await new Promise((resolve) => setTimeout(resolve, FIXTURE_DELAY_MS));
-  }
-  return fixtureFor(domain);
-}
 
 export function DomainScorePage() {
   const [domain, setDomain] = useState("");
@@ -30,7 +21,7 @@ export function DomainScorePage() {
 
     setLookup({ status: "loading" });
     try {
-      const data = await fetchScore(value);
+      const data = await getScore(value);
       setLookup({ status: "ok", data });
     } catch (error) {
       setLookup({

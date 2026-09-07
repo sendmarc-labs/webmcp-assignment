@@ -11,7 +11,7 @@ npm ci
 npm run dev
 ```
 
-Open http://localhost:5173/domain-score. No `.env` file is required. Lookups use the captured responses in `src/fixtures`.
+Open http://localhost:5173/domain-score. No `.env` file is required. Lookups go through `src/api/score.ts`, which returns the captured responses in `src/fixtures`.
 
 ## Browser flag
 
