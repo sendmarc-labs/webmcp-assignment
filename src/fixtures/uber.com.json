@@ -1,0 +1,849 @@
+{
+  "domain": "uber.com",
+  "score_pct": 58,
+  "info": {
+    "has_a_record": true,
+    "has_mx_record": true,
+    "authority_domain": "uber.com",
+    "admin_email": "serviceproviders@uber.com",
+    "domain_ips": [
+      "104.36.194.17"
+    ],
+    "nameservers": [
+      "edns126.ultradns.biz.",
+      "edns126.ultradns.com.",
+      "edns126.ultradns.net.",
+      "edns126.ultradns.org."
+    ],
+    "mail_servers": [
+      "aspmx.l.google.com.",
+      "alt1.aspmx.l.google.com.",
+      "alt2.aspmx.l.google.com.",
+      "alt3.aspmx.l.google.com.",
+      "alt4.aspmx.l.google.com."
+    ],
+    "dns_provider": "Unknown",
+    "mail_provider": "Google Workspace | Gmail",
+    "dmarc_providers": [
+      "Valimail"
+    ]
+  },
+  "impersonation": {
+    "score": 70,
+    "has_dmarc_record": true,
+    "has_spf_record": true,
+    "num_dkim_records": 17,
+    "dmarc_ref": "#/records/dmarc",
+    "spf_ref": "#/records/spf",
+    "dkim_ref": "#/records/dkim"
+  },
+  "privacy": {
+    "score": 0,
+    "has_tlsrpt_record": false,
+    "has_mtasts_record": false,
+    "tlsrpt_ref": "#/records/tlsrpt",
+    "mtasts_ref": "#/records/mtasts"
+  },
+  "marketing": {
+    "score": 40,
+    "has_bimi_record": true,
+    "bimi_ref": "#/records/bimi"
+  },
+  "records": {
+    "soa": {
+      "status": "OK",
+      "score": 100,
+      "domain": "uber.com",
+      "ttl": 3600,
+      "ns_addr": "208.67.220.220",
+      "ns_proto": "tcp",
+      "cnames": [],
+      "tags": [],
+      "authority_domain": "uber.com",
+      "master_name": "edns126.ultradns.com",
+      "admin_email": "serviceproviders@uber.com",
+      "dns_provider": "Unknown"
+    },
+    "ns": {
+      "status": "OK",
+      "score": 100,
+      "domain": "uber.com",
+      "ttl": 77449,
+      "ns_addr": "208.67.220.220",
+      "ns_proto": "tcp",
+      "cnames": [],
+      "tags": [],
+      "nameservers": [
+        "edns126.ultradns.biz.",
+        "edns126.ultradns.com.",
+        "edns126.ultradns.net.",
+        "edns126.ultradns.org."
+      ]
+    },
+    "mx": {
+      "status": "OK",
+      "score": 100,
+      "domain": "uber.com",
+      "ttl": 100,
+      "ns_addr": "208.67.220.220",
+      "ns_proto": "udp",
+      "cnames": [],
+      "tags": [],
+      "mailservers": [
+        {
+          "preference": 2,
+          "exchange": "aspmx.l.google.com."
+        },
+        {
+          "preference": 5,
+          "exchange": "alt1.aspmx.l.google.com."
+        },
+        {
+          "preference": 5,
+          "exchange": "alt2.aspmx.l.google.com."
+        },
+        {
+          "preference": 10,
+          "exchange": "alt3.aspmx.l.google.com."
+        },
+        {
+          "preference": 10,
+          "exchange": "alt4.aspmx.l.google.com."
+        }
+      ],
+      "mail_provider": "Google Workspace | Gmail"
+    },
+    "a": {
+      "status": "OK",
+      "score": 100,
+      "domain": "uber.com",
+      "ttl": 97,
+      "ns_addr": "8.8.4.4",
+      "ns_proto": "tcp",
+      "cnames": [],
+      "tags": [],
+      "addresses": [
+        "104.36.194.17"
+      ]
+    },
+    "bimi": {
+      "status": "Error",
+      "score": 40,
+      "domain": "default._bimi.uber.com",
+      "ttl": 1800,
+      "ns_addr": "208.67.220.220",
+      "ns_proto": "tcp",
+      "cnames": [],
+      "tags": [
+        {
+          "points": -60,
+          "level": "Error",
+          "msg": "errors"
+        },
+        {
+          "points": 0,
+          "level": "OK",
+          "msg": "valid logo"
+        },
+        {
+          "points": 0,
+          "level": "Error",
+          "msg": "invalid signature"
+        }
+      ],
+      "entries": [
+        "v=BIMI1; l=https://amplify.valimail.com/bimi/uber/WSc5-ZpWcvs-uber_tinyps_v4.svg; a="
+      ],
+      "has_logo": true,
+      "has_valid_logo": true,
+      "has_certificate": true,
+      "has_valid_certificate": false,
+      "logo_url": "https://amplify.valimail.com/bimi/uber/WSc5-ZpWcvs-uber_tinyps_v4.svg",
+      "logo_size": 2953,
+      "certificate_cn": null,
+      "certificate_expires": null
+    },
+    "dkim": {
+      "status": "Info",
+      "score": 100,
+      "domain": "uber.com",
+      "ttl": 0,
+      "ns_addr": "",
+      "ns_proto": "",
+      "cnames": [],
+      "tags": [],
+      "num_dkim_records": 17,
+      "num_valid_keys": 17,
+      "selectors": [
+        {
+          "selector": "google",
+          "status": "OK",
+          "paths": {
+            "explain": "/explain/dkim/uber.com/google"
+          },
+          "key_type": "rsa",
+          "key_length": 1024,
+          "entries": [
+            "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQD47RWlgqkIHUpMVRDcEDEtf0N2Oy4NieUMJfQRqnb9z6wU0rANdNZyM2Nb/4V0tfmgIm6bCe31nS0pRLvYtgul/G9v/K2ZVJoE2SEDzMSDKs5P++ASHmhNvqN8Ndt91Gbf8rpIW5d+Y7yya6QDzRJGGnvo84jVRne/OYpLVJPDPQIDAQAB"
+          ]
+        },
+        {
+          "selector": "hs1",
+          "status": "Info",
+          "paths": {
+            "explain": "/explain/dkim/uber.com/hs1"
+          },
+          "key_type": "rsa",
+          "key_length": 2048,
+          "entries": [
+            "k=rsa;t=s;p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuW4ThOa+rKrEnprhGhj6Yw/zvOaOyuZ8oNOk9XJz3nGPfVPWJ/7+H7PfYfZIoWnNNqRAtZSsQpQETl/UOxF80Os18aGnk7WmeGcNJ3QBcXXU1A2jj19Vupwaenu/pRbpmD+XhlGpKxAlbXWlHWESBPxphQdcj3B4K57ErQEHgJ411tCN6QhVD8uBNi7168sAHvweILGtYMcWp1Nn2Unpw4akdH9ZQATxiDNMPdJAAJoYNJXRE042wWQVeL1A88/e1S2tq1KTln05okrL3kxs/mzuCbFcbRTZhJ5G0l2KT7reKRECSkTnMvcKtaxKlEnEqAYTplyMJjS0IiuVLzi28QIDAQAB"
+          ]
+        },
+        {
+          "selector": "hs2",
+          "status": "Info",
+          "paths": {
+            "explain": "/explain/dkim/uber.com/hs2"
+          },
+          "key_type": "rsa",
+          "key_length": 2048,
+          "entries": [
+            "k=rsa;t=s;p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAonGyezTigDNdHS1v/JxmwgW1fTZjOfl8bOPG9J5muIXSsUXPgXj0dBS065WfBS07Fit/VxyY905pHepTGJ39i6LWjeMdwfKEZBAh6stGf3uMvNblMhCZHKP8RFcRgbNeg0wtrZv7T9K4EweHfyRVYZ9CGoquDKspPv0zDcoPc8hISsAkMIwCAiqIw42NodytIkhKeP1SOpGdYKA6+53beFux0t5GG+XFADYcqaPal2LE1VIVrp0L9W0rhL5JRRA4J/JCAktk/wMGteoJVY6CUwvA5VpjV10UEZ9nU18DNLjsQRHReTB/HOnHRn0WIPHTjraobtzwww+2AaqD3NLI/wIDAQAB"
+          ]
+        },
+        {
+          "selector": "k1",
+          "status": "Info",
+          "paths": {
+            "explain": "/explain/dkim/uber.com/k1"
+          },
+          "key_type": "rsa",
+          "key_length": 1024,
+          "entries": [
+            "k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDbNrX2cY/GUKIFx2G/1I00ftdAj713WP9AQ1xir85i89sA2guU0ta4UX1Xzm06XIU6iBP41VwmPwBGRNofhBVR+e6WHUoNyIR4Bn84LVcfZE20rmDeXQblIupNWBqLXM1Q+VieI/eZu/7k9/vOkLSaQQdml4Cv8lb3PcnluMVIhQIDAQAB;"
+          ]
+        },
+        {
+          "selector": "k2",
+          "status": "OK",
+          "paths": {
+            "explain": "/explain/dkim/uber.com/k2"
+          },
+          "key_type": "rsa",
+          "key_length": 2048,
+          "entries": [
+            "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv2aC2KjGKLOwTweBY5A9RpjsxaBXR9r7OAU6U8/zn92ivImI75naUujWbItRI/QmL1jy5PWGqLwoUA0b90ObWaLDc+i9MtTNmGeWO009hr20fIxhGg6XBT2kjZ1DTThopSe1nAndsupmcBwlQ5Q6LJ+ZAxLcujnPIxM0ZBLmgpkv8u6RfY4eFP8OLvdAW3oSuB0DyLDigQX4Sj8wBO4YIdQH6AAmBeOsidsKAFNFUCpc3vCxtBDR12U+cBg724l3sBkMQ8evnz6idnqxq9QAVYh8k4kJ+RP+6cqTdy7LjIm8xY/bQNpQIpGUAuDo2DjLcCDun9DAI4Q/3z+Q0o9QuQIDAQAB;"
+          ]
+        },
+        {
+          "selector": "k3",
+          "status": "OK",
+          "paths": {
+            "explain": "/explain/dkim/uber.com/k3"
+          },
+          "key_type": "rsa",
+          "key_length": 2048,
+          "entries": [
+            "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsYGiMSn7fsUqSvfSX40x9R1OlRtbNiCY80lHRIlcKx3XDIR7257aUx+q9CSIARdfTL6KCuLGNFx5g9TgVr6png4ajcieSQGtOehBgxnkDN8aAA5TX0FmFrcefJU0JoxLOF09EKgXxhSSHCk/ekVb0PXSboHXoZ9+EI404F1qhcwXXIgHXTaUthHTut2P6BBZhIXIgvDe/w49GchR7MRJqjNb7neEBbYHbgWuBTvvHCg7Gy6m6n9krYK+ROWq3dVvXy9plAGK3ygM+HtjIiMt7arRGMOF0WgDTz7YdN9BGpt6BvXxLnjiQcgS5T9n+cIyPZgiWzDMXNlaEEdKTEKxrwIDAQAB;"
+          ]
+        },
+        {
+          "selector": "m1",
+          "status": "OK",
+          "paths": {
+            "explain": "/explain/dkim/uber.com/m1"
+          },
+          "key_type": "rsa",
+          "key_length": 1024,
+          "entries": [
+            "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDyBopOXKL/mCf7YP48O/4EbVZJJyVl0rjXHULZ8htFZ6SBXzTViK/Cb53WZLh+UVsWyUZzR7r2+MKtHT899sIwYqGHip2J6ZVj2XEx+Z1apBstQ0qByeUGBPLbN7pBeT6Z2qrlNHD3UpOmcDJ1sOlGRQFkrYkcNLRL6f9PzVdkEwIDAQAB"
+          ]
+        },
+        {
+          "selector": "mandrill",
+          "status": "OK",
+          "paths": {
+            "explain": "/explain/dkim/uber.com/mandrill"
+          },
+          "key_type": "rsa",
+          "key_length": 1024,
+          "entries": [
+            "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCrLHiExVd55zd/IQ/J/mRwSRMAocV/hMB3jXwaHH36d9NaVynQFYV8NaWi69c1veUtRzGt7yAioXqLj7Z4TeEUoOLgrKsn8YnckGs9i3B3tVFB+Ch/4mPhXWiNfNdynHWBcPcbJ8kjEQ2U8y78dHZj1YeRXXVvWob2OaKynO8/lQIDAQAB"
+          ]
+        },
+        {
+          "selector": "mte1",
+          "status": "OK",
+          "paths": {
+            "explain": "/explain/dkim/uber.com/mte1"
+          },
+          "key_type": "rsa",
+          "key_length": 2048,
+          "entries": [
+            "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2GGE1A9cwHjf5KYMV0GdrKcEhCVgaMSsZylGs9qItDZOgo8q3xu7TN4HbI+lPypqJ8+9Z5gH/plxnagHKxd9d2n2rSSF8jn+NS85w3jED1FShmrkNB4YqcoK+/uVGPCjbxqta5afs731dx9OhgsA24mu8MfszAmp+PBov/LhpXlN2vuJ3oUOZNAFKIv+K2oZGanqT9eLF1r9031omvLelDTstFmH402tPnjui4ChtVz9PI6KG2J0NarHZCCPBFhhcqZMMnIvHodYnGKn3fn6tb2WHo5e8O+dZxnyzIqBmOHX2i5jtfAyGwvgdIz160VgyKCDR9LcbWTy9wPThByqFwIDAQAB;"
+          ]
+        },
+        {
+          "selector": "mte2",
+          "status": "OK",
+          "paths": {
+            "explain": "/explain/dkim/uber.com/mte2"
+          },
+          "key_type": "rsa",
+          "key_length": 2048,
+          "entries": [
+            "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAt7NkXm8fhrVVfUvX7UQBHmn8nlT17wjLQXyMOJWMXkXbSLjcQF3g9DABLv/WQ5FNpEaW5XeLltsV/z7WGbxBAXEDgSEQLhDx3JqpVJYa86ZsEI4ZDUthlLeB6Ln/RDGoG/pTmNqlxhh/1/kWH7t1JYBaJjLZGl5jlHLMcp1S1vifzmNviJpL58U9LO90g08sg48W/NdWIltWBlUyqMxGy5DFOMbxKeBZ5rEayrxzKNfG0Q80nH5PXwHPvXs2iWlgGjhnEWwRztI5PUquGwFwrhVXsQLR/yb94tp6Yn9BVmNeM13GhYSHMLuM2+fYZqRqEDv0afjtLS31bmm6lFTA1wIDAQAB;"
+          ]
+        },
+        {
+          "selector": "s1",
+          "status": "Info",
+          "paths": {
+            "explain": "/explain/dkim/uber.com/s1"
+          },
+          "key_type": "rsa",
+          "key_length": 2048,
+          "entries": [
+            "k=rsa; t=s; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0KT35wXA5Y8j6fCSI8OE3PD0+LXZFhAtEzlUSi6iTe/05i9iqgHg8RYJl4Y29uG77ObDHRRTmiNzXp6VxfxYewax+/JC40ZcAwavwf9MFO3ma+2n3Lfw7cR8nIdjSFl7327roke0yKyx4Qt+8TrTuna5mU7jZO5eCZaNaLsif3479L47TDVAFYY4RWOsbRddXlAMqHdAAQN8S7SgW/Cj+gSkwrFjhhpVHDv/LdUfRj3aIwpN7G/fRtAkWGNyJ3wsATnliaH09PUOlXl5TM5+OqtluZRYsED5GPw3PLOLBge/o4Rje+6THDA1lYy5pfoFcmYiIdfTQ9hv7G+LVcu5IQIDAQAB"
+          ]
+        },
+        {
+          "selector": "s2",
+          "status": "Info",
+          "paths": {
+            "explain": "/explain/dkim/uber.com/s2"
+          },
+          "key_type": "rsa",
+          "key_length": 1024,
+          "entries": [
+            "k=rsa; t=s; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDUQL+rhtHS8mbLM55T5AN4cWu4HqQ2ciW1V2aRRFzmqMJU8HpCkQ6jPtLeRYabDvTDsx1fT2uMHIvYUYBH0WkkTMMJfO0JGZdMVqlPPW0u0tgF5o/DfrRnguXcqi1PDGDuOLBzNh60od1AmOd6FNTxNLTLOJXNJLgf/qJw4rcSsQIDAQAB"
+          ]
+        },
+        {
+          "selector": "salesforce2",
+          "status": "OK",
+          "paths": {
+            "explain": "/explain/dkim/uber.com/salesforce2"
+          },
+          "key_type": "rsa",
+          "key_length": 1024,
+          "entries": [
+            "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCSF/DCK5pNOaMnGtPSSN0WYi18jJEGVY+iCRXCC9C8e5nBJkT3zF/mXPiQSFKl6WynlC/BqWRJe3i7KZ1nMItaBEYIHYxRQD7rwSnEnlgPEEceU+7aEY9fz4RmrD+BWIseGjQgKUW0/gCI8eTQcJzEUscSA4nUcWTQFkbGl0kY3wIDAQAB"
+          ]
+        },
+        {
+          "selector": "smtp",
+          "status": "OK",
+          "paths": {
+            "explain": "/explain/dkim/uber.com/smtp"
+          },
+          "key_type": "rsa",
+          "key_length": 1024,
+          "entries": [
+            "v=DKIM1; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCuzjFDdKs0YCQtdtXlRYuTvt/KX5inZRZIX6FE9a5Qa7g2pQxwS+AZ9wItGXqLZUbNpLDVZCN3JzXh1rAwGmt5bE8+AWp60yMKnvV+SrXxAnLGDchgJRQfKlpTpmdnkPrErurWgwwTW46z/UQTQi+/B9VJa5X8T5xClocvwOsASwIDAQAB"
+          ]
+        },
+        {
+          "selector": "smtpapi",
+          "status": "OK",
+          "paths": {
+            "explain": "/explain/dkim/uber.com/smtpapi"
+          },
+          "key_type": "rsa",
+          "key_length": 1024,
+          "entries": [
+            "v=DKIM1; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDPtW5iwpXVPiH5FzJ7Nrl8USzuY9zqqzjE0D1r04xDN6qwziDnmgcFNNfMewVKN2D1O+2J9N14hRprzByFwfQW76yojh54Xu3uSbQ3JP0A7k8o8GutRF8zbFUA8n0ZH2y0cIEjMliXY4W4LwPA7m4q0ObmvSjhd63O9d8z1XkUBwIDAQAB"
+          ]
+        },
+        {
+          "selector": "zendesk1",
+          "status": "OK",
+          "paths": {
+            "explain": "/explain/dkim/uber.com/zendesk1"
+          },
+          "key_type": "rsa",
+          "key_length": 2048,
+          "entries": [
+            "v=DKIM1;t=s;n=core;k=rsa;p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA9IqdLrO3Zr2/56MHt8oQVCQorP0Bl2Fz9sM2tFBnJCdB/HogQmuudEg2xAovCN2PYpw44UijIvPuBoT9vxiv6ZCBJTLJXa82r6ke5rE4tbe9NKFIrVIb9S306cJDrnKFMDb8p0dU/Su0+eUR5gVAOtCuz2L8HAzs5edvsEvD/Fb4ny1RLNSEPZkIQLfGhVxQeWANm3+1Jwb/OBVXV9k0nKpWrpgqcmO7NzroJirp014RQY7rGi60JLUubc6XhvoFQBQrtOAdVlZC5wvfS1bgpq5kQpdP7cajIqWCeqxPTeo0ZUpey2ZcaygEsZz0Z3Gs5wDzyuqd7/ADpr2jNF7ozwIDAQAB"
+          ]
+        },
+        {
+          "selector": "zendesk2",
+          "status": "OK",
+          "paths": {
+            "explain": "/explain/dkim/uber.com/zendesk2"
+          },
+          "key_type": "rsa",
+          "key_length": 2048,
+          "entries": [
+            "v=DKIM1; t=s; n=core; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmiSFNkgXrO3I8aOaPONDZWHv027rkiGIwb838OyXPgvFDEkCV/qGcdXSjZnaVAadrTm/oKnL8WOltP9zB1FLEuKt0fTi5zRyKPE4oIYCnEzXwrGqzjUcCABQBawQVqvXjDOaYh9Lhp8W5PYOLo905vRW7ipyIMDhuzBOJls91/WWXnNK0OwP3RghiisZjA3K2KqtRwf7w6GjNeNuAMNhvcmgAN15d/mhK+dev/hcRbal66RoYyTD8c0F0isahWH0envEX8aj+SBhheNk0/U37dGE+4nFaY5yP9CUlYjFKDSIKZgHzG4Hci3t/RubU58pi6BCrQQdAFvIOeDFeCZ0ywIDAQAB"
+          ]
+        }
+      ],
+      "key_types": [
+        "rsa"
+      ],
+      "key_lengths": [
+        1024,
+        2048
+      ]
+    },
+    "dmarc": {
+      "status": "OK",
+      "score": 80,
+      "domain": "_dmarc.uber.com",
+      "ttl": 600,
+      "ns_addr": "208.67.220.220",
+      "ns_proto": "tcp",
+      "cnames": [],
+      "tags": [
+        {
+          "points": -20,
+          "level": "Info",
+          "msg": "p=quarantine"
+        },
+        {
+          "points": 0,
+          "level": "OK",
+          "msg": "pct=100"
+        },
+        {
+          "points": 0,
+          "level": "OK",
+          "msg": "rua=[*]"
+        },
+        {
+          "points": 0,
+          "level": "Info",
+          "msg": "ruf=[]"
+        }
+      ],
+      "entries": [
+        "v=DMARC1; p=quarantine; rua=mailto:dmarc_agg@vali.email"
+      ],
+      "dmarc_providers": [
+        "Valimail"
+      ],
+      "inherited_from": null,
+      "policy": "quarantine",
+      "subdomain_policy": "quarantine",
+      "policy_percentage": 100,
+      "dkim_alignment": "relaxed",
+      "spf_alignment": "relaxed",
+      "aggregate_reporting_interval": 86400,
+      "aggregate_reporting_addresses": [
+        "mailto:dmarc_agg@vali.email"
+      ],
+      "failure_reporting_options": [
+        "Generate a DMARC failure report if all underlying authentication mechanisms fail to produce an aligned \"pass\" result."
+      ],
+      "failure_reporting_format": "afrf",
+      "failure_reporting_addresses": [],
+      "is_dmarcbis": false,
+      "record_parts": {
+        "v": "DMARC1",
+        "p": "quarantine",
+        "rua": "mailto:dmarc_agg@vali.email"
+      }
+    },
+    "mtasts": {
+      "status": "Fatal",
+      "score": 0,
+      "domain": null,
+      "ttl": 0,
+      "ns_addr": "",
+      "ns_proto": "",
+      "cnames": [],
+      "tags": [
+        {
+          "points": -100,
+          "level": "Error",
+          "msg": "No record"
+        }
+      ],
+      "entries": [],
+      "has_policy": false,
+      "policy_mode": "",
+      "policy_mx": [],
+      "policy_max_age": 0
+    },
+    "spf": {
+      "status": "Warn",
+      "score": 60,
+      "domain": "uber.com",
+      "ttl": 300,
+      "ns_addr": "208.67.220.220",
+      "ns_proto": "tcp",
+      "cnames": [],
+      "tags": [
+        {
+          "points": 0,
+          "level": "Info",
+          "msg": "warnings"
+        },
+        {
+          "points": -40,
+          "level": "Warn",
+          "msg": "dns>10"
+        },
+        {
+          "points": 0,
+          "level": "Info",
+          "msg": "~all"
+        }
+      ],
+      "entries": [
+        "v=spf1 include:uber.com._nspf.vali.email include:%{i}._ip.%{h}._ehlo.%{d}._spf.vali.email include:mailgun.org ~all"
+      ],
+      "all_qualifier": "~",
+      "all_qualifier_name": "SoftFail",
+      "num_lookup": 19,
+      "num_secondary_lookup": 0,
+      "num_void_lookup": 0,
+      "root_record_size": 114,
+      "redirected_to": null,
+      "record_parts": [
+        {
+          "v": "spf1"
+        },
+        {
+          "mechanism": "include",
+          "value": "uber.com._nspf.vali.email"
+        },
+        {
+          "mechanism": "include",
+          "value": "%{i}._ip.%{h}._ehlo.%{d}._spf.vali.email"
+        },
+        {
+          "mechanism": "include",
+          "value": "mailgun.org"
+        },
+        {
+          "mechanism": "all",
+          "qualifier": "~"
+        }
+      ],
+      "spf_tree": {
+        "status": "Warn",
+        "record_type": "SPF",
+        "domain": "uber.com",
+        "record": "v=spf1 include:uber.com._nspf.vali.email include:%{i}._ip.%{h}._ehlo.%{d}._spf.vali.email include:mailgun.org ~all",
+        "children": [
+          {
+            "status": "OK",
+            "record_type": "SPF",
+            "domain": "mailgun.org",
+            "record": "v=spf1 include:_spf.mailgun.org include:_spf.eu.mailgun.org -all",
+            "children": [
+              {
+                "status": "OK",
+                "record_type": "SPF",
+                "domain": "_spf.eu.mailgun.org",
+                "record": "v=spf1 ip4:141.193.32.0/23 ip4:159.135.140.80/29 ip4:159.135.132.128/25 ip4:161.38.204.0/22 ip4:87.253.232.0/21 ip4:185.189.236.0/22 ip4:185.211.120.0/22 ip4:185.250.236.0/22 ip4:143.55.236.0/22 ip4:198.244.60.0/22 ip4:204.220.160.0/20 ~all",
+                "children": []
+              },
+              {
+                "status": "OK",
+                "record_type": "SPF",
+                "domain": "_spf.mailgun.org",
+                "record": "v=spf1 include:_spf1.mailgun.org include:_spf2.mailgun.org ~all",
+                "children": [
+                  {
+                    "status": "OK",
+                    "record_type": "SPF",
+                    "domain": "_spf2.mailgun.org",
+                    "record": "v=spf1 ip4:161.38.192.0/20 ip4:143.55.224.0/21 ip4:143.55.232.0/22 ip4:159.112.240.0/20 ip4:198.244.48.0/20 ip4:204.220.168.0/21 ip4:204.220.176.0/20 ~all",
+                    "children": []
+                  },
+                  {
+                    "status": "OK",
+                    "record_type": "SPF",
+                    "domain": "_spf1.mailgun.org",
+                    "record": "v=spf1 ip4:159.135.224.0/20 ip4:69.72.32.0/20 ip4:204.220.90.0/23 ip4:204.220.92.0/22 ~all",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "status": "OK",
+            "record_type": "SPF",
+            "domain": "uber.com._nspf.vali.email",
+            "record": "v=spf1 -all",
+            "children": []
+          },
+          {
+            "status": "OK",
+            "record_type": "SPF",
+            "domain": "1.0.0.1._ip.uber.com._ehlo.uber.com._spf.vali.email",
+            "record": "v=spf1 include:f453f4.workshop-spf.net include:oraclecloud.com -all",
+            "children": [
+              {
+                "status": "OK",
+                "record_type": "SPF",
+                "domain": "oraclecloud.com",
+                "record": "v=spf1 include:spf_c.oraclecloud.com include:spf_omcs.oracleoutsourcing.com include:spf.dynect.net include:spf.oracleemaildelivery.com -all",
+                "children": [
+                  {
+                    "status": "OK",
+                    "record_type": "SPF",
+                    "domain": "spf_c.oraclecloud.com",
+                    "record": "v=spf1 ip4:147.154.59.192/26 ip4:147.154.123.119 include:spf_s1.oraclecloud.com include:spf_s2.oraclecloud.com ip4:170.52.3.228 ip4:192.29.143.169 ip4:159.112.165.64/26 ip4:192.29.42.231 ip4:129.149.37.192/26 ip4:158.178.219.192/26 ip4:158.179.11.192/26 ip4:170.52.4.253 ip4:147.154.14.34 ip4:81.208.187.192/26 ip4:204.216.114.64/26 ip4:158.180.181.192/26 ip4:158.179.135.64/26 ip4:79.72.112.64/26 ip4:64.181.146.64/26 -all",
+                    "children": [
+                      {
+                        "status": "OK",
+                        "record_type": "SPF",
+                        "domain": "spf_s1.oraclecloud.com",
+                        "record": "v=spf1 ip4:79.76.16.64/26 ip4:64.181.146.64/26 ip4:161.33.255.64/26 ip4:207.127.109.192/26 ip4:151.104.48.26 ip4:151.104.61.235 ip4:84.235.196.192/26 ip4:84.235.197.192/26 ip4:84.8.179.64/26 ip4:159.13.87.0/26 ip4:129.148.11.192/26 ip4:207.127.107.192/26 ip4:147.154.255.192/26 ip4:192.29.216.192/26 ip4:146.56.127.192/26 ip4:192.29.91.192/26 ip4:204.216.119.192/26 ip4:129.153.243.192/26 -all",
+                        "children": []
+                      },
+                      {
+                        "status": "OK",
+                        "record_type": "SPF",
+                        "domain": "spf_s2.oraclecloud.com",
+                        "record": "v=spf1 ip4:147.154.189.192/26 ip4:141.145.79.16/28 ip4:129.148.219.192/26 ip4:129.157.31.16/28 ip4:207.211.139.192/26 ip4:155.248.28.128/26 ip4:155.248.119.192/26 ip4:155.248.115.192/26 ip4:129.149.63.192/26 ip4:192.29.172.192/26 ip4:207.127.72.64/26 ip4:192.29.207.192/26 ip4:192.29.232.192/26 ip4:192.29.137.192/26 ip4:204.216.127.192/26 ip4:192.29.178.192/26 ip4:129.149.22.192/26 ip4:79.72.22.64/26 ip4:79.72.39.64/26 -all",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "status": "OK",
+                    "record_type": "SPF",
+                    "domain": "spf_omcs.oracleoutsourcing.com",
+                    "record": "v=spf1 include:spf_omcs1.oracleoutsourcing.com include:spf_omcsoci.oracleoutsourcing.com include:spf_omcsoci1.oracleoutsourcing.com include:spf_omcsoci2.oracleoutsourcing.com -all",
+                    "children": [
+                      {
+                        "status": "OK",
+                        "record_type": "SPF",
+                        "domain": "spf_omcsoci2.oracleoutsourcing.com",
+                        "record": "v=spf1 ip4:168.138.1.97 ip4:168.138.2.99 ip4:168.138.66.193 ip4:168.138.64.64 ip4:152.67.177.68 ip4:152.67.179.224 ip4:193.123.37.245 ip4:193.123.34.110 ip4:152.67.231.146 ip4:152.67.229.23 ip4:129.151.74.2 ip4:129.151.64.149 ip4:193.123.100.97 ip4:193.123.96.233 ip4:193.123.89.191 ip4:193.123.91.245 -all",
+                        "children": []
+                      },
+                      {
+                        "status": "OK",
+                        "record_type": "SPF",
+                        "domain": "spf_omcsoci.oracleoutsourcing.com",
+                        "record": "v=spf1 ip4:129.146.141.125 ip4:129.146.115.250 ip4:129.213.52.209 ip4:129.213.108.188 ip4:130.61.62.193 ip4:130.61.44.244 ip4:132.145.46.179 ip4:132.145.49.72 ip4:132.145.106.137 ip4:132.145.107.187 ip4:132.145.116.137 ip4:132.145.119.49 -all",
+                        "children": []
+                      },
+                      {
+                        "status": "OK",
+                        "record_type": "SPF",
+                        "domain": "spf_omcs1.oracleoutsourcing.com",
+                        "record": "v=spf1 ip4:129.154.68.14 ip4:140.86.49.106 ip4:141.145.121.155 ip4:160.34.9.220 ip4:129.144.145.9 ip4:193.122.69.28 ip4:158.101.225.84 ip4:129.151.113.159 ip4:129.151.103.183 -all",
+                        "children": []
+                      },
+                      {
+                        "status": "OK",
+                        "record_type": "SPF",
+                        "domain": "spf_omcsoci1.oracleoutsourcing.com",
+                        "record": "v=spf1 ip4:140.238.193.90 ip4:140.238.192.166 ip4:140.238.168.198 ip4:140.238.169.249 ip4:140.238.189.191 ip4:140.238.176.109 ip4:140.238.161.247 ip4:140.238.165.123 ip4:168.138.1.97 ip4:168.138.2.99 ip4:129.151.113.159 ip4:129.151.103.183 -all",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "status": "OK",
+                    "record_type": "SPF",
+                    "domain": "spf.dynect.net",
+                    "record": "v=spf1 ip4:208.76.56.0/21 ip4:216.146.32.0/20 ip4:80.231.25.0/24 ip4:80.231.219.0/24 ip4:103.11.200.0/22 ip4:199.19.0.0/21 ip4:204.13.248.0/22 ip4:208.78.68.0/22 ip4:162.88.36.0/23 ip4:162.88.4.0/23 ip4:162.88.24.0/24 ip4:162.88.28.0/24 ip4:10.144.155.128/26 ip4:129.148.164.0/25 ip4:129.148.215.0/25 ip4:129.149.6.0/25 ip4:129.149.38.0/25 ip4:138.1.170.0/24 ip4:147.154.32.0/25 ip4:147.154.63.0/24 ip4:147.154.126.0/24 ip4:147.154.191.0/24 ip4:162.88.24.0/21 ip4:192.29.72.0/25 ip4:192.29.88.0/25 ip4:192.29.103.128/25 ip4:192.29.134.0/25 ip4:155.248.148.0/25 ip4:131.186.12.0/25 ip4:138.1.156.112 ip4:130.35.132.195 -all",
+                    "children": []
+                  },
+                  {
+                    "status": "OK",
+                    "record_type": "SPF",
+                    "domain": "spf.oracleemaildelivery.com",
+                    "record": "v=spf1 ip4:138.1.108.0/25 ip4:130.35.116.0/25 ip4:162.88.24.0/24 ip4:162.88.28.0/24 ip4:147.154.191.0/24 ip4:147.154.63.0/24 ip4:147.154.126.0/24 ip4:138.1.170.0/24 ip4:147.154.32.0/25 ip4:192.29.103.128/25 -all",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "status": "OK",
+                "record_type": "SPF",
+                "domain": "f453f4.workshop-spf.net",
+                "record": "v=spf1 ip4:149.72.61.106 ip4:149.72.151.35 ip4:149.72.201.153 ip4:149.72.22.42 ip4:149.72.183.8 ip4:159.183.141.212 ip4:159.183.141.213 ip4:159.183.141.214 -all",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      "ip4_ranges": [
+        "10.144.155.128/26",
+        "64.181.146.64/26",
+        "69.72.32.0/20",
+        "79.72.22.64/26",
+        "79.72.39.64/26",
+        "79.72.112.64/26",
+        "79.76.16.64/26",
+        "80.231.25.0/24",
+        "80.231.219.0/24",
+        "81.208.187.192/26",
+        "84.8.179.64/26",
+        "84.235.196.192/26",
+        "84.235.197.192/26",
+        "87.253.232.0/21",
+        "103.11.200.0/22",
+        "129.144.145.9/32",
+        "129.146.115.250/32",
+        "129.146.141.125/32",
+        "129.148.11.192/26",
+        "129.148.164.0/25",
+        "129.148.215.0/25",
+        "129.148.219.192/26",
+        "129.149.6.0/25",
+        "129.149.22.192/26",
+        "129.149.37.192/26",
+        "129.149.38.0/25",
+        "129.149.63.192/26",
+        "129.151.64.149/32",
+        "129.151.74.2/32",
+        "129.151.103.183/32",
+        "129.151.113.159/32",
+        "129.153.243.192/26",
+        "129.154.68.14/32",
+        "129.157.31.16/28",
+        "129.213.52.209/32",
+        "129.213.108.188/32",
+        "130.35.116.0/25",
+        "130.35.132.195/32",
+        "130.61.44.244/32",
+        "130.61.62.193/32",
+        "131.186.12.0/25",
+        "132.145.46.179/32",
+        "132.145.49.72/32",
+        "132.145.106.137/32",
+        "132.145.107.187/32",
+        "132.145.116.137/32",
+        "132.145.119.49/32",
+        "138.1.108.0/25",
+        "138.1.156.112/32",
+        "138.1.170.0/24",
+        "140.86.49.106/32",
+        "140.238.161.247/32",
+        "140.238.165.123/32",
+        "140.238.168.198/32",
+        "140.238.169.249/32",
+        "140.238.176.109/32",
+        "140.238.189.191/32",
+        "140.238.192.166/32",
+        "140.238.193.90/32",
+        "141.145.79.16/28",
+        "141.145.121.155/32",
+        "141.193.32.0/23",
+        "143.55.224.0/20",
+        "146.56.127.192/26",
+        "147.154.14.34/32",
+        "147.154.32.0/25",
+        "147.154.59.192/26",
+        "147.154.63.0/24",
+        "147.154.123.119/32",
+        "147.154.126.0/24",
+        "147.154.189.192/26",
+        "147.154.191.0/24",
+        "147.154.255.192/26",
+        "149.72.22.42/32",
+        "149.72.61.106/32",
+        "149.72.151.35/32",
+        "149.72.183.8/32",
+        "149.72.201.153/32",
+        "151.104.48.26/32",
+        "151.104.61.235/32",
+        "152.67.177.68/32",
+        "152.67.179.224/32",
+        "152.67.229.23/32",
+        "152.67.231.146/32",
+        "155.248.28.128/26",
+        "155.248.115.192/26",
+        "155.248.119.192/26",
+        "155.248.148.0/25",
+        "158.101.225.84/32",
+        "158.178.219.192/26",
+        "158.179.11.192/26",
+        "158.179.135.64/26",
+        "158.180.181.192/26",
+        "159.13.87.0/26",
+        "159.112.165.64/26",
+        "159.112.240.0/20",
+        "159.135.132.128/25",
+        "159.135.140.80/29",
+        "159.135.224.0/20",
+        "159.183.141.212/31",
+        "159.183.141.214/32",
+        "160.34.9.220/32",
+        "161.33.255.64/26",
+        "161.38.192.0/20",
+        "162.88.4.0/23",
+        "162.88.24.0/21",
+        "162.88.36.0/23",
+        "168.138.1.97/32",
+        "168.138.2.99/32",
+        "168.138.64.64/32",
+        "168.138.66.193/32",
+        "170.52.3.228/32",
+        "170.52.4.253/32",
+        "185.189.236.0/22",
+        "185.211.120.0/22",
+        "185.250.236.0/22",
+        "192.29.42.231/32",
+        "192.29.72.0/25",
+        "192.29.88.0/25",
+        "192.29.91.192/26",
+        "192.29.103.128/25",
+        "192.29.134.0/25",
+        "192.29.137.192/26",
+        "192.29.143.169/32",
+        "192.29.172.192/26",
+        "192.29.178.192/26",
+        "192.29.207.192/26",
+        "192.29.216.192/26",
+        "192.29.232.192/26",
+        "193.122.69.28/32",
+        "193.123.34.110/32",
+        "193.123.37.245/32",
+        "193.123.89.191/32",
+        "193.123.91.245/32",
+        "193.123.96.233/32",
+        "193.123.100.97/32",
+        "198.244.48.0/20",
+        "199.19.0.0/21",
+        "204.13.248.0/22",
+        "204.216.114.64/26",
+        "204.216.119.192/26",
+        "204.216.127.192/26",
+        "204.220.90.0/23",
+        "204.220.92.0/22",
+        "204.220.160.0/19",
+        "207.127.72.64/26",
+        "207.127.107.192/26",
+        "207.127.109.192/26",
+        "207.211.139.192/26",
+        "208.76.56.0/21",
+        "208.78.68.0/22",
+        "216.146.32.0/20"
+      ],
+      "ip6_ranges": []
+    },
+    "tlsrpt": {
+      "status": "Fatal",
+      "score": 0,
+      "domain": null,
+      "ttl": 0,
+      "ns_addr": "",
+      "ns_proto": "",
+      "cnames": [],
+      "tags": [
+        {
+          "points": -100,
+          "level": "Error",
+          "msg": "No record"
+        }
+      ],
+      "entries": [],
+      "reporting_addresses": [],
+      "tlsrpt_providers": []
+    }
+  }
+}

@@ -1,0 +1,806 @@
+{
+  "domain": "mit.edu",
+  "score_pct": 56,
+  "info": {
+    "has_a_record": true,
+    "has_mx_record": true,
+    "authority_domain": "mit.edu",
+    "admin_email": "network-request@mit.edu",
+    "domain_ips": [
+      "23.222.38.231",
+      "2a02:26f0:6d00:5a5::255e",
+      "2a02:26f0:6d00:590::255e"
+    ],
+    "nameservers": [
+      "asia2.akam.net.",
+      "ns1-173.akam.net.",
+      "use5.akam.net.",
+      "usw2.akam.net.",
+      "ns1-37.akam.net.",
+      "use2.akam.net.",
+      "eur5.akam.net.",
+      "asia1.akam.net."
+    ],
+    "mail_servers": [
+      "mit-edu.mail.protection.outlook.com."
+    ],
+    "dns_provider": "Name.com, Inc",
+    "mail_provider": "Microsoft 365 Exchange",
+    "dmarc_providers": [
+      "DIY"
+    ]
+  },
+  "impersonation": {
+    "score": 70,
+    "has_dmarc_record": true,
+    "has_spf_record": true,
+    "num_dkim_records": 23,
+    "dmarc_ref": "#/records/dmarc",
+    "spf_ref": "#/records/spf",
+    "dkim_ref": "#/records/dkim"
+  },
+  "privacy": {
+    "score": 0,
+    "has_tlsrpt_record": false,
+    "has_mtasts_record": false,
+    "tlsrpt_ref": "#/records/tlsrpt",
+    "mtasts_ref": "#/records/mtasts"
+  },
+  "marketing": {
+    "score": 0,
+    "has_bimi_record": false,
+    "bimi_ref": "#/records/bimi"
+  },
+  "records": {
+    "soa": {
+      "status": "OK",
+      "score": 100,
+      "domain": "mit.edu",
+      "ttl": 1800,
+      "ns_addr": "8.8.8.8",
+      "ns_proto": "udp",
+      "cnames": [],
+      "tags": [],
+      "authority_domain": "mit.edu",
+      "master_name": "use2.akam.net",
+      "admin_email": "network-request@mit.edu",
+      "dns_provider": "Name.com, Inc"
+    },
+    "ns": {
+      "status": "OK",
+      "score": 100,
+      "domain": "mit.edu",
+      "ttl": 975,
+      "ns_addr": "8.8.8.8",
+      "ns_proto": "udp",
+      "cnames": [],
+      "tags": [],
+      "nameservers": [
+        "asia2.akam.net.",
+        "ns1-173.akam.net.",
+        "use5.akam.net.",
+        "usw2.akam.net.",
+        "ns1-37.akam.net.",
+        "use2.akam.net.",
+        "eur5.akam.net.",
+        "asia1.akam.net."
+      ]
+    },
+    "mx": {
+      "status": "OK",
+      "score": 100,
+      "domain": "mit.edu",
+      "ttl": 120,
+      "ns_addr": "8.8.8.8",
+      "ns_proto": "udp",
+      "cnames": [],
+      "tags": [],
+      "mailservers": [
+        {
+          "preference": 100,
+          "exchange": "mit-edu.mail.protection.outlook.com."
+        }
+      ],
+      "mail_provider": "Microsoft 365 Exchange"
+    },
+    "a": {
+      "status": "OK",
+      "score": 100,
+      "domain": "mit.edu",
+      "ttl": 12,
+      "ns_addr": "8.8.8.8",
+      "ns_proto": "udp",
+      "cnames": [],
+      "tags": [],
+      "addresses": [
+        "23.222.38.231",
+        "2a02:26f0:6d00:5a5::255e",
+        "2a02:26f0:6d00:590::255e"
+      ]
+    },
+    "bimi": {
+      "status": "Fatal",
+      "score": 0,
+      "domain": null,
+      "ttl": 0,
+      "ns_addr": "",
+      "ns_proto": "",
+      "cnames": [],
+      "tags": [
+        {
+          "points": -100,
+          "level": "Error",
+          "msg": "No record"
+        }
+      ],
+      "entries": [],
+      "has_logo": false,
+      "has_valid_logo": false,
+      "has_certificate": false,
+      "has_valid_certificate": false,
+      "logo_url": null,
+      "logo_size": null,
+      "certificate_cn": null,
+      "certificate_expires": null
+    },
+    "dkim": {
+      "status": "Info",
+      "score": 100,
+      "domain": "mit.edu",
+      "ttl": 0,
+      "ns_addr": "",
+      "ns_proto": "",
+      "cnames": [],
+      "tags": [],
+      "num_dkim_records": 23,
+      "num_valid_keys": 23,
+      "selectors": [
+        {
+          "selector": "1s3",
+          "status": "Info",
+          "paths": {
+            "explain": "/explain/dkim/mit.edu/1s3"
+          },
+          "key_type": "rsa",
+          "key_length": 1024,
+          "entries": [
+            "k=rsa; t=s; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDMQYduYjE8Dta5DqIfGJdp/dtI2gob3nkRiwWvNan1TfP4pIyszLPU1j/h4MHITGiL/bJ+PVxLtOifLlRy9BCQBcGY2yIyxceskZJNqGW91EjQYu3WldIY99EuFflfMkiNmqI/djWmv1DnKt5dxZIRBTCYOY+hTM+uRNBffARmqQIDAQAB"
+          ]
+        },
+        {
+          "selector": "cm",
+          "status": "OK",
+          "paths": {
+            "explain": "/explain/dkim/mit.edu/cm"
+          },
+          "key_type": "rsa",
+          "key_length": 1024,
+          "entries": [
+            "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDLTel8PCu0MXU4VcLvhr2KJonRsLVSMVsRgPutgDIALpHNhzHqEYm9pRVCJIiHM2iY7j0mAF0GKqurRotwiNs8YmhXSrzsHoVVPyGNPPxLX/LhYKHA+tS53YkhEdAOdBFXv/mmt9qGgwujuW3iHZ6mH1yyWrbhWV4rfXUpZ/wz5QIDAQAB;"
+          ]
+        },
+        {
+          "selector": "e2ma-k1",
+          "status": "OK",
+          "paths": {
+            "explain": "/explain/dkim/mit.edu/e2ma-k1"
+          },
+          "key_type": "rsa",
+          "key_length": 2048,
+          "entries": [
+            "v=DKIM1;t=s;p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuzN9plsNQzzhrvAua8DAYqCFEcPpp6s16xdbtJPM/SjOALGogMQmP/hRUxcFtXMfJFE97vRsvFmsUP5CoYxhX+XbAdwse+u7a0zBugC5bsw2xBN+qdUz5bl+X1DmzpMMnGNy1AgaMw6kBCqECNGRy5sr1YllvckajkBw+3GyWP2eCQ78JzrBty97OfTuFRBtQxQMnngMpqMRMKR7NxNnxnM0V3AkGcqn0Fk2IatauXnKdwUeSlbAu602K18y7yfLJ2bU3i+gPRu7qU9GXS1IOcraXOlk7arF3n24Eu9c0HICOlaYJ8b33PBw/AajOk9dISoGzD5m6iKIJqKXTMBoRQIDAQAB"
+          ]
+        },
+        {
+          "selector": "e2ma-k2",
+          "status": "OK",
+          "paths": {
+            "explain": "/explain/dkim/mit.edu/e2ma-k2"
+          },
+          "key_type": "rsa",
+          "key_length": 2048,
+          "entries": [
+            "v=DKIM1;t=s;p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2LQX63pNA2N45Ht1J07jNZX+PomKxbrjKoZRsEvSIo9q+TAqLp7foqGh0r7WD1Q1GjTR8gQFZWc1TgZZFriujZryBBvAVrtgRXn1D6P4217u4iUXp9/5weq5w/DuHU41eJrkeNQY0jFansXTT0cNrK9/VPT9xueF+yeplpIFh8jyNEuiwEvzF+LdXLgxYF4UrzOzJYGys7FqKV9eIGdjjsjWwnoZUdrfaS01mz5xrxWVVSzz5aesHNKZcqq+2bGvz0ie8lu348jvE3xEvUOACHHwvNqV45NOOt/li3B9y3nKBrTD1eke/VBkbK80U2ix2vpHsicYnrpKoYTSOLa4CwIDAQAB"
+          ]
+        },
+        {
+          "selector": "e2ma-k3",
+          "status": "OK",
+          "paths": {
+            "explain": "/explain/dkim/mit.edu/e2ma-k3"
+          },
+          "key_type": "rsa",
+          "key_length": 2048,
+          "entries": [
+            "v=DKIM1;t=s;p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAucIl1gPtJKYIdbbvNSrzEa9bZlIHll1eW6YF68o5pfRej6PPCn2vaoM6JtzUTrc3Dk74Vyo27dkD9FdI/aYCNnpg69AurKYnGF9IGmIjn2R4TyR2f8CQIwopBlYU05cbi4WdsT5AipVY4Mgh+9OnWgpI0ALg3Sf+Uyq5W1wQixSJRCJvPOFfZx7eCBVIhjDgGdvN6ClXnzq9ppgCR/LzGFGBGakCdo+5kzGj/ABUCwOrskWbzjJ99wVRLPTDvtRBdpYHCbrwJqvXTz24YwLpxMnaSJV+RCLJEU//aUNsKZsOlE/EPm2S1fFIJAdBlfJHDzpUXERf/G4w0EH9a6LOQQIDAQAB"
+          ]
+        },
+        {
+          "selector": "google",
+          "status": "OK",
+          "paths": {
+            "explain": "/explain/dkim/mit.edu/google"
+          },
+          "key_type": "rsa",
+          "key_length": 2048,
+          "entries": [
+            "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiSbLt0suIW25ugxKvznkfDnggtLob3rBIDWzkEWx0YltgW3QCABLT5Cuc5dyuY1BJ4ECQUSWh37jKOJ2D4ib0l/Si7EkgnjLL/Wb0B9fRZZJz1afaLeFO4KD8Gu0BF954MeNiUQ8WmyiVDA9f0iF+j3WVcBWG3AwKrjxENOE94ehT8Pj/o6lUKQpGdX76GhHr7DOYgn2vRznGGW84WiWPOttoqvbLvLLhnwIKNZ6k14sEPKkxD2tATCOrxr8U7mnhmn52rYhA+idOceZBoBgomKf6vRvd0P4GDIMeNiMQnVBdU7FqxEl7LjyRGxKmZSvZlb8YtSv3CQfQHPXkSbGfQIDAQAB"
+          ]
+        },
+        {
+          "selector": "hs1",
+          "status": "Info",
+          "paths": {
+            "explain": "/explain/dkim/mit.edu/hs1"
+          },
+          "key_type": "rsa",
+          "key_length": 2048,
+          "entries": [
+            "k=rsa;t=s;p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuW4ThOa+rKrEnprhGhj6Yw/zvOaOyuZ8oNOk9XJz3nGPfVPWJ/7+H7PfYfZIoWnNNqRAtZSsQpQETl/UOxF80Os18aGnk7WmeGcNJ3QBcXXU1A2jj19Vupwaenu/pRbpmD+XhlGpKxAlbXWlHWESBPxphQdcj3B4K57ErQEHgJ411tCN6QhVD8uBNi7168sAHvweILGtYMcWp1Nn2Unpw4akdH9ZQATxiDNMPdJAAJoYNJXRE042wWQVeL1A88/e1S2tq1KTln05okrL3kxs/mzuCbFcbRTZhJ5G0l2KT7reKRECSkTnMvcKtaxKlEnEqAYTplyMJjS0IiuVLzi28QIDAQAB"
+          ]
+        },
+        {
+          "selector": "hs2",
+          "status": "Info",
+          "paths": {
+            "explain": "/explain/dkim/mit.edu/hs2"
+          },
+          "key_type": "rsa",
+          "key_length": 2048,
+          "entries": [
+            "k=rsa;t=s;p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAonGyezTigDNdHS1v/JxmwgW1fTZjOfl8bOPG9J5muIXSsUXPgXj0dBS065WfBS07Fit/VxyY905pHepTGJ39i6LWjeMdwfKEZBAh6stGf3uMvNblMhCZHKP8RFcRgbNeg0wtrZv7T9K4EweHfyRVYZ9CGoquDKspPv0zDcoPc8hISsAkMIwCAiqIw42NodytIkhKeP1SOpGdYKA6+53beFux0t5GG+XFADYcqaPal2LE1VIVrp0L9W0rhL5JRRA4J/JCAktk/wMGteoJVY6CUwvA5VpjV10UEZ9nU18DNLjsQRHReTB/HOnHRn0WIPHTjraobtzwww+2AaqD3NLI/wIDAQAB"
+          ]
+        },
+        {
+          "selector": "k1",
+          "status": "Info",
+          "paths": {
+            "explain": "/explain/dkim/mit.edu/k1"
+          },
+          "key_type": "rsa",
+          "key_length": 1024,
+          "entries": [
+            "k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDbNrX2cY/GUKIFx2G/1I00ftdAj713WP9AQ1xir85i89sA2guU0ta4UX1Xzm06XIU6iBP41VwmPwBGRNofhBVR+e6WHUoNyIR4Bn84LVcfZE20rmDeXQblIupNWBqLXM1Q+VieI/eZu/7k9/vOkLSaQQdml4Cv8lb3PcnluMVIhQIDAQAB;"
+          ]
+        },
+        {
+          "selector": "k2",
+          "status": "OK",
+          "paths": {
+            "explain": "/explain/dkim/mit.edu/k2"
+          },
+          "key_type": "rsa",
+          "key_length": 2048,
+          "entries": [
+            "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv2aC2KjGKLOwTweBY5A9RpjsxaBXR9r7OAU6U8/zn92ivImI75naUujWbItRI/QmL1jy5PWGqLwoUA0b90ObWaLDc+i9MtTNmGeWO009hr20fIxhGg6XBT2kjZ1DTThopSe1nAndsupmcBwlQ5Q6LJ+ZAxLcujnPIxM0ZBLmgpkv8u6RfY4eFP8OLvdAW3oSuB0DyLDigQX4Sj8wBO4YIdQH6AAmBeOsidsKAFNFUCpc3vCxtBDR12U+cBg724l3sBkMQ8evnz6idnqxq9QAVYh8k4kJ+RP+6cqTdy7LjIm8xY/bQNpQIpGUAuDo2DjLcCDun9DAI4Q/3z+Q0o9QuQIDAQAB;"
+          ]
+        },
+        {
+          "selector": "k3",
+          "status": "OK",
+          "paths": {
+            "explain": "/explain/dkim/mit.edu/k3"
+          },
+          "key_type": "rsa",
+          "key_length": 2048,
+          "entries": [
+            "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsYGiMSn7fsUqSvfSX40x9R1OlRtbNiCY80lHRIlcKx3XDIR7257aUx+q9CSIARdfTL6KCuLGNFx5g9TgVr6png4ajcieSQGtOehBgxnkDN8aAA5TX0FmFrcefJU0JoxLOF09EKgXxhSSHCk/ekVb0PXSboHXoZ9+EI404F1qhcwXXIgHXTaUthHTut2P6BBZhIXIgvDe/w49GchR7MRJqjNb7neEBbYHbgWuBTvvHCg7Gy6m6n9krYK+ROWq3dVvXy9plAGK3ygM+HtjIiMt7arRGMOF0WgDTz7YdN9BGpt6BvXxLnjiQcgS5T9n+cIyPZgiWzDMXNlaEEdKTEKxrwIDAQAB;"
+          ]
+        },
+        {
+          "selector": "mailjet",
+          "status": "Info",
+          "paths": {
+            "explain": "/explain/dkim/mit.edu/mailjet"
+          },
+          "key_type": "rsa",
+          "key_length": 1024,
+          "entries": [
+            "k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDE8jLEK08o9YaB2fONdUs3PbxlE+T+2lsC/cUFZJyqgnhxjRwJTDhle8puO589t3gP77cka3ahvUrOMzWphe0ezaPtBxNZuyBRGggMwGgYllwt/EJQksBAIN5nqKtLkUU+LATwNQVw4VVg5EWh4o7CpGqEu2FsCub9CW0atdbNUQIDAQAB"
+          ]
+        },
+        {
+          "selector": "mandrill",
+          "status": "OK",
+          "paths": {
+            "explain": "/explain/dkim/mit.edu/mandrill"
+          },
+          "key_type": "rsa",
+          "key_length": 1024,
+          "entries": [
+            "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCrLHiExVd55zd/IQ/J/mRwSRMAocV/hMB3jXwaHH36d9NaVynQFYV8NaWi69c1veUtRzGt7yAioXqLj7Z4TeEUoOLgrKsn8YnckGs9i3B3tVFB+Ch/4mPhXWiNfNdynHWBcPcbJ8kjEQ2U8y78dHZj1YeRXXVvWob2OaKynO8/lQIDAQAB;"
+          ]
+        },
+        {
+          "selector": "mte1",
+          "status": "OK",
+          "paths": {
+            "explain": "/explain/dkim/mit.edu/mte1"
+          },
+          "key_type": "rsa",
+          "key_length": 2048,
+          "entries": [
+            "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2GGE1A9cwHjf5KYMV0GdrKcEhCVgaMSsZylGs9qItDZOgo8q3xu7TN4HbI+lPypqJ8+9Z5gH/plxnagHKxd9d2n2rSSF8jn+NS85w3jED1FShmrkNB4YqcoK+/uVGPCjbxqta5afs731dx9OhgsA24mu8MfszAmp+PBov/LhpXlN2vuJ3oUOZNAFKIv+K2oZGanqT9eLF1r9031omvLelDTstFmH402tPnjui4ChtVz9PI6KG2J0NarHZCCPBFhhcqZMMnIvHodYnGKn3fn6tb2WHo5e8O+dZxnyzIqBmOHX2i5jtfAyGwvgdIz160VgyKCDR9LcbWTy9wPThByqFwIDAQAB;"
+          ]
+        },
+        {
+          "selector": "mte2",
+          "status": "OK",
+          "paths": {
+            "explain": "/explain/dkim/mit.edu/mte2"
+          },
+          "key_type": "rsa",
+          "key_length": 2048,
+          "entries": [
+            "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAt7NkXm8fhrVVfUvX7UQBHmn8nlT17wjLQXyMOJWMXkXbSLjcQF3g9DABLv/WQ5FNpEaW5XeLltsV/z7WGbxBAXEDgSEQLhDx3JqpVJYa86ZsEI4ZDUthlLeB6Ln/RDGoG/pTmNqlxhh/1/kWH7t1JYBaJjLZGl5jlHLMcp1S1vifzmNviJpL58U9LO90g08sg48W/NdWIltWBlUyqMxGy5DFOMbxKeBZ5rEayrxzKNfG0Q80nH5PXwHPvXs2iWlgGjhnEWwRztI5PUquGwFwrhVXsQLR/yb94tp6Yn9BVmNeM13GhYSHMLuM2+fYZqRqEDv0afjtLS31bmm6lFTA1wIDAQAB;"
+          ]
+        },
+        {
+          "selector": "s1",
+          "status": "Info",
+          "paths": {
+            "explain": "/explain/dkim/mit.edu/s1"
+          },
+          "key_type": "rsa",
+          "key_length": 2048,
+          "entries": [
+            "k=rsa; t=s; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwJKl5d8PwOrrs+0FNBHyHHXkaQ4Z6S5kVVoKvnIlQqp71RWuC3h8Hf2xDUUDx668sM1d/Sv+zJ+AjT8dNx0oJObQPpHQzOR+xCqKbvrMbo5NmGppv45RLUWnH7TK1oREEsGMLb1YEpQYIzzZvvxOi2bX3jd5DkryBsi5TkY+oAeJvnE9H2NwBCH4FN1LC4/k0kpNCQUUREH+PISWxsmCCFKh8tqjKeNw05/iMYtC16mBFvnwxOgADSmXnKkn362pDgwIJZpYoZkAjY7dAnmOL/6M7EOAVmdUA8QKLCV6IFP+bvcWQOpLMp7bq2wc9dnzwt23P3mjJtnHTGnAwzMacQIDAQAB"
+          ]
+        },
+        {
+          "selector": "s1024",
+          "status": "OK",
+          "paths": {
+            "explain": "/explain/dkim/mit.edu/s1024"
+          },
+          "key_type": "rsa",
+          "key_length": 1024,
+          "entries": [
+            "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDZ7uso31PuEwfyv9xstDYk4spRHxduDPfoYcbjskdXWrK1T82uEjr8rxGROTpO+hzNb1aJSnKA9OYuHhMyA8QLNW1s9id+YPoI5tiMLDgXaN74Ys+AcdShGS8Tp84XcAK7G+7glsGfXdTbtCol2HpQcOzhu8jHhelRQ9nyP8H+4QIDAQAB"
+          ]
+        },
+        {
+          "selector": "s2",
+          "status": "Info",
+          "paths": {
+            "explain": "/explain/dkim/mit.edu/s2"
+          },
+          "key_type": "rsa",
+          "key_length": 1024,
+          "entries": [
+            "k=rsa; t=s; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDFg+11kzM8tduR8bFhz0TGAQN9582vo2W7hUUU+wSkJxYVWAb4Wu7uN0JTUudLwb5QVaRMgoUG1gQT7z3MlENf3mVj3A0CyUdWjjhLBq/Nf/3InXXxlzGYQd1aRBVvwoW9aBzBoC1S901XDxZudqqqj9AkSYd+hIlCE7RJ/X11LwIDAQAB"
+          ]
+        },
+        {
+          "selector": "selector2",
+          "status": "OK",
+          "paths": {
+            "explain": "/explain/dkim/mit.edu/selector2"
+          },
+          "key_type": "rsa",
+          "key_length": 1024,
+          "entries": [
+            "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC7nKiXj7FhbFXLuAfXtQZCTdxZQcoRJMBvQNk9+2I0i221l1gchHkhCrvjhKkOReFzR2ZgFG4ubtClnde2P6ZvMYzIlvH+ImkaH/xTxRJM4CjXNXAxc6+bxw8GKKbbHPW+LcL3uExcdOPaTjr1FkBJqbj4xGcjCbXeUyER1LCJBQIDAQAB;"
+          ]
+        },
+        {
+          "selector": "sf1",
+          "status": "OK",
+          "paths": {
+            "explain": "/explain/dkim/mit.edu/sf1"
+          },
+          "key_type": "rsa",
+          "key_length": 2048,
+          "entries": [
+            "v=DKIM1; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoSqrTE/ADlBUaaIF4hbt0nCZcuyquJjl2u49MhYVqSjYLogSSVnukteQAiDDe5toj7UCMDaQqXH854CPk7geQWNMYZSVBw0+wdc4+tgNzBXBpvgKEG6vvf2AVw+SrDelusI++uKZTcKcbZ4UVdkN3/qGLO74oOywsIGRvi0YKkI+mzALRKZb73wedvh++6C+U9/DIpJB7qD9uecJ6h/y8SOmz3+YDbkgthy3mSjAVoBWc9x0SivuvMBWkBEwrWLgLYbieH5syo1/xnjPoGP/GTRq7J9DEatj09sXgxPLx5RU1g9ZJoY82GpJx+D+oTKY8uiSioixQAu3TnuJ0y8dMwIDAQAB"
+          ]
+        },
+        {
+          "selector": "sfdc",
+          "status": "OK",
+          "paths": {
+            "explain": "/explain/dkim/mit.edu/sfdc"
+          },
+          "key_type": "rsa",
+          "key_length": 2048,
+          "entries": [
+            "v=DKIM1; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlXcval9SokWJGgPEk5X1lkcuN0ds/nMfpuzhpJ8yawHIe/Q/CVax/4k2SRIvLcayqirqxeUhxIMs//6PiOsbQQlKlrU8PiZk/wwTPT5MQqjcT6Cq2Zgcz3hzQVrRnPqgGX61V6VXHsOcQklsJL/hsVbXFyr9lixTw4BW8s0BLWSgZAZxUxnA6PlufAowdrOVOTWt5ijodMoG7gO5zUIJSwkpV9QvSHboO9ahwEcqjt8viD8po1AqK+8ZJjn5tdVr6DlSAXZAyHU3zVtT6xaPyccbdwewZ/jD9rZmojEfxOF9Aea4UXIP/LPgf6hp2KTDCcd+cSVhKqw+MuWY44Ay2QIDAQAB"
+          ]
+        },
+        {
+          "selector": "smtpapi",
+          "status": "OK",
+          "paths": {
+            "explain": "/explain/dkim/mit.edu/smtpapi"
+          },
+          "key_type": "rsa",
+          "key_length": 1024,
+          "entries": [
+            "v=DKIM1; k=rsa; t=s; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDPtW5iwpXVPiH5FzJ7Nrl8USzuY9zqqzjE0D1r04xDN6qwziDnmgcFNNfMewVKN2D1O+2J9N14hRprzByFwfQW76yojh54Xu3uSbQ3JP0A7k8o8GutRF8zbFUA8n0ZH2y0cIEjMliXY4W4LwPA7m4q0ObmvSjhd63O9d8z1XkUBwIDAQAB;"
+          ]
+        },
+        {
+          "selector": "spop1024",
+          "status": "Info",
+          "paths": {
+            "explain": "/explain/dkim/mit.edu/spop1024"
+          },
+          "key_type": "rsa",
+          "key_length": 1024,
+          "entries": [
+            "k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC2IuHyMsWsHK9FtJDvdtp0+FoiRrpMYTbWyiAYqOsyW1ygGglpmXXaYeqwhZDlzqhMdwt5rfSc4j8k5sZ7iBCo5FkKPDNDGuzjv7deV1V9Mfet2F4Xg9OcgD1v77VPxKY7qDApdSAZE+FCco6FwvXNlqtRWff09Bzx0mgRyJKjpQIDAQAB"
+          ]
+        }
+      ],
+      "key_types": [
+        "rsa"
+      ],
+      "key_lengths": [
+        1024,
+        2048
+      ]
+    },
+    "dmarc": {
+      "status": "OK",
+      "score": 40,
+      "domain": "_dmarc.mit.edu",
+      "ttl": 60,
+      "ns_addr": "8.8.8.8",
+      "ns_proto": "udp",
+      "cnames": [],
+      "tags": [
+        {
+          "points": -60,
+          "level": "Warn",
+          "msg": "p=none"
+        },
+        {
+          "points": 0,
+          "level": "OK",
+          "msg": "pct=100"
+        },
+        {
+          "points": 0,
+          "level": "OK",
+          "msg": "rua=[*]"
+        },
+        {
+          "points": 0,
+          "level": "Info",
+          "msg": "ruf=[]"
+        }
+      ],
+      "entries": [
+        "v=DMARC1; p=none; rua=mailto:dmarcreports@mit.edu"
+      ],
+      "dmarc_providers": [
+        "DIY"
+      ],
+      "inherited_from": null,
+      "policy": "none",
+      "subdomain_policy": "none",
+      "policy_percentage": 100,
+      "dkim_alignment": "relaxed",
+      "spf_alignment": "relaxed",
+      "aggregate_reporting_interval": 86400,
+      "aggregate_reporting_addresses": [
+        "mailto:dmarcreports@mit.edu"
+      ],
+      "failure_reporting_options": [
+        "Generate a DMARC failure report if all underlying authentication mechanisms fail to produce an aligned \"pass\" result."
+      ],
+      "failure_reporting_format": "afrf",
+      "failure_reporting_addresses": [],
+      "is_dmarcbis": false,
+      "record_parts": {
+        "v": "DMARC1",
+        "p": "none",
+        "rua": "mailto:dmarcreports@mit.edu"
+      }
+    },
+    "mtasts": {
+      "status": "Fatal",
+      "score": 0,
+      "domain": null,
+      "ttl": 0,
+      "ns_addr": "",
+      "ns_proto": "",
+      "cnames": [],
+      "tags": [
+        {
+          "points": -100,
+          "level": "Error",
+          "msg": "No record"
+        }
+      ],
+      "entries": [],
+      "has_policy": false,
+      "policy_mode": "",
+      "policy_mx": [],
+      "policy_max_age": 0
+    },
+    "spf": {
+      "status": "OK",
+      "score": 100,
+      "domain": "mit.edu",
+      "ttl": 1800,
+      "ns_addr": "8.8.8.8",
+      "ns_proto": "udp_tcp",
+      "cnames": [],
+      "tags": [
+        {
+          "points": 0,
+          "level": "Info",
+          "msg": "dns>6"
+        },
+        {
+          "points": 0,
+          "level": "Info",
+          "msg": "void>0"
+        },
+        {
+          "points": 0,
+          "level": "OK",
+          "msg": "-all"
+        }
+      ],
+      "entries": [
+        "v=spf1 include:_s00430413.autospf.email -all"
+      ],
+      "all_qualifier": "-",
+      "all_qualifier_name": "Fail",
+      "num_lookup": 10,
+      "num_secondary_lookup": 0,
+      "num_void_lookup": 2,
+      "root_record_size": 44,
+      "redirected_to": null,
+      "record_parts": [
+        {
+          "v": "spf1"
+        },
+        {
+          "mechanism": "include",
+          "value": "_s00430413.autospf.email"
+        },
+        {
+          "mechanism": "all",
+          "qualifier": "-"
+        }
+      ],
+      "spf_tree": {
+        "status": "OK",
+        "record_type": "SPF",
+        "domain": "mit.edu",
+        "record": "v=spf1 include:_s00430413.autospf.email -all",
+        "children": [
+          {
+            "status": "OK",
+            "record_type": "SPF",
+            "domain": "_s00430413.autospf.email",
+            "record": "v=spf1 ip4:3.99.6.92 ip4:52.61.91.9 ip4:69.72.41.2 ip4:52.42.20.3 ip4:62.23.85.10 ip4:18.9.1.0/24 ip4:69.72.41.28 ip4:52.101.40.4 ip4:207.54.75.14 ip4:207.54.75.15 ip4:207.54.75.16 ip4:142.0.177.24 ip4:142.0.187.58 ip4:52.222.73.83 ip4:52.222.62.51 ip4:52.222.75.85 ip4:160.1.62.192 ip4:15.200.21.50 ip4:18.7.16.0/24 ip4:18.7.21.0/24 ip4:18.7.34.0/24 ip4:18.7.62.0/24 ip4:18.7.68.0/24 ip4:18.7.71.0/24 include:_s004304130.autospf.email -all",
+            "children": [
+              {
+                "status": "OK",
+                "record_type": "SPF",
+                "domain": "_s004304130.autospf.email",
+                "record": "v=spf1 ip4:18.9.21.0/24 ip4:18.9.25.0/24 ip4:18.9.28.0/24 ip4:74.112.64.38 ip4:129.41.172.4 ip4:69.72.32.253 ip4:69.72.47.188 ip4:69.72.34.120 ip4:69.72.45.120 ip4:12.228.6.215 ip4:52.45.50.190 ip4:52.31.29.196 ip4:52.60.142.64 ip4:13.237.94.13 ip4:54.66.240.63 ip4:40.92.0.0/15 ip4:52.5.134.202 ip4:52.101.41.58 ip4:52.101.11.19 ip4:154.62.6.0/24 ip4:207.54.83.136 ip4:207.54.83.137 ip4:207.54.83.138 include:_s004304131.autospf.email -all",
+                "children": [
+                  {
+                    "status": "OK",
+                    "record_type": "SPF",
+                    "domain": "_s004304131.autospf.email",
+                    "record": "v=spf1 ip4:69.20.119.219 ip4:63.32.240.193 ip4:52.19.113.120 ip4:74.125.0.0/16 ip4:52.222.89.228 ip4:15.200.44.248 ip4:139.60.0.0/22 ip4:74.112.65.118 ip4:208.85.54.226 ip4:129.41.172.69 ip4:13.111.0.0/16 ip4:143.55.237.88 ip4:167.89.0.0/17 ip4:50.31.32.0/19 ip4:198.21.0.0/21 ip4:149.72.0.0/16 ip4:52.76.190.252 ip4:3.218.253.173 ip4:35.160.78.215 ip4:54.195.228.99 ip4:40.172.14.241 ip4:40.107.0.0/16 include:_s004304132.autospf.email -all",
+                    "children": [
+                      {
+                        "status": "OK",
+                        "record_type": "SPF",
+                        "domain": "_s004304132.autospf.email",
+                        "record": "v=spf1 ip4:52.100.0.0/15 ip4:52.102.0.0/16 ip4:52.103.0.0/17 ip4:104.47.0.0/17 ip4:52.101.194.15 ip4:34.251.228.195 ip4:142.0.176.0/20 ip4:69.48.230.0/25 ip4:20.96.12.43/32 ip4:20.1.130.13/32 ip4:98.97.248.0/21 ip4:64.69.212.0/24 ip4:15.200.201.185 ip4:159.183.195.16 ip4:143.55.237.127 ip4:143.55.237.162 ip4:143.55.237.120 ip4:185.12.80.0/22 ip4:216.198.0.0/18 ip4:168.245.0.0/17 ip4:159.183.0.0/16 include:_s004304133.autospf.email -all",
+                        "children": [
+                          {
+                            "status": "OK",
+                            "record_type": "SPF",
+                            "domain": "_s004304133.autospf.email",
+                            "record": "v=spf1 ip4:13.215.187.237 ip4:40.172.175.158 ip4:45.14.148.0/22 ip4:20.1.128.197/32 ip4:20.10.24.226/32 ip4:209.85.128.0/17 ip4:139.60.152.0/22 ip4:198.187.196.100 ip4:198.187.196.130 ip4:198.245.81.0/24 ip4:159.135.226.248 ip4:159.135.233.165 ip4:12.228.6.215/32 ip4:208.117.48.0/20 ip4:198.37.144.0/20 ip4:134.128.64.0/19 ip4:134.128.96.0/19 ip4:87.253.232.0/21 ip4:69.20.119.216/29 ip4:76.12.109.192/27 include:_s004304134.autospf.email -all",
+                            "children": [
+                              {
+                                "status": "OK",
+                                "record_type": "SPF",
+                                "domain": "_s004304134.autospf.email",
+                                "record": "v=spf1 ip4:67.59.141.128/28 ip4:70.42.227.151/32 ip4:70.42.227.152/32 ip4:20.114.186.35/32 ip4:162.247.216.0/22 ip4:52.222.73.120/32 ip4:139.146.160.0/25 ip4:136.147.176.0/24 ip4:136.147.182.0/24 ip4:136.147.135.0/24 ip4:199.122.123.0/24 ip4:103.151.192.0/23 ip4:188.172.128.0/20 ip4:192.161.144.0/20 ip4:192.254.112.0/20 ip4:223.165.113.0/24 ip4:223.165.115.0/24 ip4:223.165.118.0/23 ip4:223.165.120.0/23 include:_s004304135.autospf.email -all",
+                                "children": [
+                                  {
+                                    "status": "OK",
+                                    "record_type": "SPF",
+                                    "domain": "_s004304135.autospf.email",
+                                    "record": "v=spf1 ip4:185.189.236.0/22 ip4:185.211.120.0/22 ip4:185.250.236.0/22 ip4:209.41.176.224/28 ip4:20.119.174.191/32 ip4:20.230.106.230/32 ip4:20.119.207.133/32 ip4:54.186.193.102/32 ip4:204.232.162.112/28 ip4:204.232.180.112/29 ip4:204.232.180.128/29 ip6:2800:3f0:4864::/56 ip4:139.146.146.128/25 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2001:4860:4864::/56 ip6:2404:6800:4864::/56 include:_s004304136.autospf.email -all",
+                                    "children": [
+                                      {
+                                        "status": "Info",
+                                        "record_type": "SPF",
+                                        "domain": "_s004304136.autospf.email",
+                                        "record": "v=spf1 ip6:2607:f8b0:4864::/56 ip6:2a00:1450:4864::/56 ip6:2c0f:fb50:4864::/56 ip6:2a01:111:f403:c902::7 ip6:2a01:111:f403:f802::2 ip6:2a01:111:f403:f908::1 ip6:2a01:111:f403:c902::14 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 exists:%{i}._spf.mta.salesforce.com exists:%{i}._spf.sparkpostmail.com -all",
+                                        "children": []
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "ip4_ranges": [
+        "3.99.6.92/32",
+        "3.218.253.173/32",
+        "12.228.6.215/32",
+        "13.111.0.0/16",
+        "13.215.187.237/32",
+        "13.237.94.13/32",
+        "15.200.21.50/32",
+        "15.200.44.248/32",
+        "15.200.201.185/32",
+        "18.7.16.0/24",
+        "18.7.21.0/24",
+        "18.7.34.0/24",
+        "18.7.62.0/24",
+        "18.7.68.0/24",
+        "18.7.71.0/24",
+        "18.9.1.0/24",
+        "18.9.21.0/24",
+        "18.9.25.0/24",
+        "18.9.28.0/24",
+        "20.1.128.197/32",
+        "20.1.130.13/32",
+        "20.10.24.226/32",
+        "20.96.12.43/32",
+        "20.114.186.35/32",
+        "20.119.174.191/32",
+        "20.119.207.133/32",
+        "20.230.106.230/32",
+        "34.251.228.195/32",
+        "35.160.78.215/32",
+        "40.92.0.0/15",
+        "40.107.0.0/16",
+        "40.172.14.241/32",
+        "40.172.175.158/32",
+        "45.14.148.0/22",
+        "50.31.32.0/19",
+        "52.5.134.202/32",
+        "52.19.113.120/32",
+        "52.31.29.196/32",
+        "52.42.20.3/32",
+        "52.45.50.190/32",
+        "52.60.142.64/32",
+        "52.61.91.9/32",
+        "52.76.190.252/32",
+        "52.100.0.0/15",
+        "52.102.0.0/16",
+        "52.103.0.0/17",
+        "52.222.62.51/32",
+        "52.222.73.83/32",
+        "52.222.73.120/32",
+        "52.222.75.85/32",
+        "52.222.89.228/32",
+        "54.66.240.63/32",
+        "54.186.193.102/32",
+        "54.195.228.99/32",
+        "62.23.85.10/32",
+        "63.32.240.193/32",
+        "64.69.212.0/24",
+        "67.59.141.128/28",
+        "69.20.119.216/29",
+        "69.48.230.0/25",
+        "69.72.32.253/32",
+        "69.72.34.120/32",
+        "69.72.41.2/32",
+        "69.72.41.28/32",
+        "69.72.45.120/32",
+        "69.72.47.188/32",
+        "70.42.227.151/32",
+        "70.42.227.152/32",
+        "74.112.64.38/32",
+        "74.112.65.118/32",
+        "74.125.0.0/16",
+        "76.12.109.192/27",
+        "87.253.232.0/21",
+        "98.97.248.0/21",
+        "103.151.192.0/23",
+        "104.47.0.0/17",
+        "129.41.172.4/32",
+        "129.41.172.69/32",
+        "134.128.64.0/18",
+        "136.147.135.0/24",
+        "136.147.176.0/24",
+        "136.147.182.0/24",
+        "139.60.0.0/22",
+        "139.60.152.0/22",
+        "139.146.146.128/25",
+        "139.146.160.0/25",
+        "142.0.176.0/20",
+        "143.55.237.88/32",
+        "143.55.237.120/32",
+        "143.55.237.127/32",
+        "143.55.237.162/32",
+        "149.72.0.0/16",
+        "154.62.6.0/24",
+        "159.135.226.248/32",
+        "159.135.233.165/32",
+        "159.183.0.0/16",
+        "160.1.62.192/32",
+        "162.247.216.0/22",
+        "167.89.0.0/17",
+        "168.245.0.0/17",
+        "185.12.80.0/22",
+        "185.189.236.0/22",
+        "185.211.120.0/22",
+        "185.250.236.0/22",
+        "188.172.128.0/20",
+        "192.161.144.0/20",
+        "192.254.112.0/20",
+        "198.21.0.0/21",
+        "198.37.144.0/20",
+        "198.187.196.100/32",
+        "198.187.196.130/32",
+        "198.245.81.0/24",
+        "199.122.123.0/24",
+        "204.232.162.112/28",
+        "204.232.180.112/29",
+        "204.232.180.128/29",
+        "207.54.75.14/31",
+        "207.54.75.16/32",
+        "207.54.83.136/31",
+        "207.54.83.138/32",
+        "208.85.54.226/32",
+        "208.117.48.0/20",
+        "209.41.176.224/28",
+        "209.85.128.0/17",
+        "216.198.0.0/18",
+        "223.165.113.0/24",
+        "223.165.115.0/24",
+        "223.165.118.0/23",
+        "223.165.120.0/23"
+      ],
+      "ip6_ranges": [
+        "2001:4860:4864::/56",
+        "2404:6800:4864::/56",
+        "2607:f8b0:4864::/56",
+        "2800:3f0:4864::/56",
+        "2a00:1450:4864::/56",
+        "2a01:111:f400::/48",
+        "2a01:111:f403::/49",
+        "2a01:111:f403:8000::/51",
+        "2a01:111:f403:c000::/51",
+        "2a01:111:f403:f000::/52",
+        "2c0f:fb50:4864::/56"
+      ]
+    },
+    "tlsrpt": {
+      "status": "Fatal",
+      "score": 0,
+      "domain": null,
+      "ttl": 0,
+      "ns_addr": "",
+      "ns_proto": "",
+      "cnames": [],
+      "tags": [
+        {
+          "points": -100,
+          "level": "Error",
+          "msg": "No record"
+        }
+      ],
+      "entries": [],
+      "reporting_addresses": [],
+      "tlsrpt_providers": []
+    }
+  }
+}

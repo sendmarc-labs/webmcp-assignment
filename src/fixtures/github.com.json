@@ -1,0 +1,659 @@
+{
+  "domain": "github.com",
+  "score_pct": 72,
+  "info": {
+    "has_a_record": true,
+    "has_mx_record": true,
+    "authority_domain": "github.com",
+    "admin_email": "hostmaster@nsone.net",
+    "domain_ips": [
+      "140.82.121.3"
+    ],
+    "nameservers": [
+      "dns3.p08.nsone.net.",
+      "ns-421.awsdns-52.com.",
+      "dns1.p08.nsone.net.",
+      "dns4.p08.nsone.net.",
+      "dns2.p08.nsone.net.",
+      "ns-1283.awsdns-32.org.",
+      "ns-520.awsdns-01.net.",
+      "ns-1707.awsdns-21.co.uk."
+    ],
+    "mail_servers": [
+      "github-com.mail.protection.outlook.com."
+    ],
+    "dns_provider": "Unknown",
+    "mail_provider": "Microsoft 365 Exchange",
+    "dmarc_providers": [
+      "DIY"
+    ]
+  },
+  "impersonation": {
+    "score": 90,
+    "has_dmarc_record": true,
+    "has_spf_record": true,
+    "num_dkim_records": 13,
+    "dmarc_ref": "#/records/dmarc",
+    "spf_ref": "#/records/spf",
+    "dkim_ref": "#/records/dkim"
+  },
+  "privacy": {
+    "score": 0,
+    "has_tlsrpt_record": false,
+    "has_mtasts_record": false,
+    "tlsrpt_ref": "#/records/tlsrpt",
+    "mtasts_ref": "#/records/mtasts"
+  },
+  "marketing": {
+    "score": 0,
+    "has_bimi_record": false,
+    "bimi_ref": "#/records/bimi"
+  },
+  "records": {
+    "soa": {
+      "status": "OK",
+      "score": 100,
+      "domain": "github.com",
+      "ttl": 3600,
+      "ns_addr": "208.67.220.220",
+      "ns_proto": "tcp",
+      "cnames": [],
+      "tags": [],
+      "authority_domain": "github.com",
+      "master_name": "dns1.p08.nsone.net",
+      "admin_email": "hostmaster@nsone.net",
+      "dns_provider": "Unknown"
+    },
+    "ns": {
+      "status": "OK",
+      "score": 100,
+      "domain": "github.com",
+      "ttl": 1018,
+      "ns_addr": "8.8.8.8",
+      "ns_proto": "tcp",
+      "cnames": [],
+      "tags": [],
+      "nameservers": [
+        "dns3.p08.nsone.net.",
+        "ns-421.awsdns-52.com.",
+        "dns1.p08.nsone.net.",
+        "dns4.p08.nsone.net.",
+        "dns2.p08.nsone.net.",
+        "ns-1283.awsdns-32.org.",
+        "ns-520.awsdns-01.net.",
+        "ns-1707.awsdns-21.co.uk."
+      ]
+    },
+    "mx": {
+      "status": "OK",
+      "score": 100,
+      "domain": "github.com",
+      "ttl": 300,
+      "ns_addr": "8.8.8.8",
+      "ns_proto": "tcp",
+      "cnames": [],
+      "tags": [],
+      "mailservers": [
+        {
+          "preference": 0,
+          "exchange": "github-com.mail.protection.outlook.com."
+        }
+      ],
+      "mail_provider": "Microsoft 365 Exchange"
+    },
+    "a": {
+      "status": "OK",
+      "score": 100,
+      "domain": "github.com",
+      "ttl": 60,
+      "ns_addr": "8.8.8.8",
+      "ns_proto": "udp",
+      "cnames": [],
+      "tags": [],
+      "addresses": [
+        "140.82.121.3"
+      ]
+    },
+    "bimi": {
+      "status": "Fatal",
+      "score": 0,
+      "domain": null,
+      "ttl": 0,
+      "ns_addr": "",
+      "ns_proto": "",
+      "cnames": [],
+      "tags": [
+        {
+          "points": -100,
+          "level": "Error",
+          "msg": "No record"
+        }
+      ],
+      "entries": [],
+      "has_logo": false,
+      "has_valid_logo": false,
+      "has_certificate": false,
+      "has_valid_certificate": false,
+      "logo_url": null,
+      "logo_size": null,
+      "certificate_cn": null,
+      "certificate_expires": null
+    },
+    "dkim": {
+      "status": "Info",
+      "score": 100,
+      "domain": "github.com",
+      "ttl": 0,
+      "ns_addr": "",
+      "ns_proto": "",
+      "cnames": [],
+      "tags": [],
+      "num_dkim_records": 13,
+      "num_valid_keys": 13,
+      "selectors": [
+        {
+          "selector": "cm",
+          "status": "Info",
+          "paths": {
+            "explain": "/explain/dkim/github.com/cm"
+          },
+          "key_type": "rsa",
+          "key_length": 1024,
+          "entries": [
+            "k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDXLybkpDQnCyQYlQc46kL2sPMsYDqwkjPyFRSDiaq6qUeujAlU775+f8rzxIrjHc8sPstAZOuJzqcgDPiidRxdE2Th/lcnfbN4btWvJwHKK6KD/IazNWNqQtunYyPzfmSRTtOE4Nii4Oxwx1glTJAVhCTObD2uh2U44lCG+pgYswIDAQAB"
+          ]
+        },
+        {
+          "selector": "google",
+          "status": "OK",
+          "paths": {
+            "explain": "/explain/dkim/github.com/google"
+          },
+          "key_type": "rsa",
+          "key_length": 2048,
+          "entries": [
+            "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAj6T5sl/RwdSqGoYWaWaFbS2UAeyPrEmd0gogocmRfS441qwR8/0KB81Hw89P0l4YiFRrXYk7NVIGfyCRHAYYZUzCkGeOysI2EjgzLFhd/NEsbRzOEc/kWkK/RO6JFq/5lOn6M9AZw/ap9tds4JG9ApgNNdSpPxp9DmvpsOSgNMVflRxQFrk3kdS4RNAPKu/OPoA7dlR/A/pECryjRoYgENtDXzdnK70HgCekems6UDzxDj61cjyoKoXtEMF/QsaHEQ1Gjfv014rDJBsubk/kT5VqHkWHa/ia68Z5r228Ety/wFfQNjXTx/J7KGZ9GkZlKED659eiJcLnWcKDSiQlhwIDAQAB"
+          ]
+        },
+        {
+          "selector": "k1",
+          "status": "Info",
+          "paths": {
+            "explain": "/explain/dkim/github.com/k1"
+          },
+          "key_type": "rsa",
+          "key_length": 1024,
+          "entries": [
+            "k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDbNrX2cY/GUKIFx2G/1I00ftdAj713WP9AQ1xir85i89sA2guU0ta4UX1Xzm06XIU6iBP41VwmPwBGRNofhBVR+e6WHUoNyIR4Bn84LVcfZE20rmDeXQblIupNWBqLXM1Q+VieI/eZu/7k9/vOkLSaQQdml4Cv8lb3PcnluMVIhQIDAQAB;"
+          ]
+        },
+        {
+          "selector": "k2",
+          "status": "OK",
+          "paths": {
+            "explain": "/explain/dkim/github.com/k2"
+          },
+          "key_type": "rsa",
+          "key_length": 2048,
+          "entries": [
+            "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv2aC2KjGKLOwTweBY5A9RpjsxaBXR9r7OAU6U8/zn92ivImI75naUujWbItRI/QmL1jy5PWGqLwoUA0b90ObWaLDc+i9MtTNmGeWO009hr20fIxhGg6XBT2kjZ1DTThopSe1nAndsupmcBwlQ5Q6LJ+ZAxLcujnPIxM0ZBLmgpkv8u6RfY4eFP8OLvdAW3oSuB0DyLDigQX4Sj8wBO4YIdQH6AAmBeOsidsKAFNFUCpc3vCxtBDR12U+cBg724l3sBkMQ8evnz6idnqxq9QAVYh8k4kJ+RP+6cqTdy7LjIm8xY/bQNpQIpGUAuDo2DjLcCDun9DAI4Q/3z+Q0o9QuQIDAQAB;"
+          ]
+        },
+        {
+          "selector": "k3",
+          "status": "OK",
+          "paths": {
+            "explain": "/explain/dkim/github.com/k3"
+          },
+          "key_type": "rsa",
+          "key_length": 2048,
+          "entries": [
+            "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsYGiMSn7fsUqSvfSX40x9R1OlRtbNiCY80lHRIlcKx3XDIR7257aUx+q9CSIARdfTL6KCuLGNFx5g9TgVr6png4ajcieSQGtOehBgxnkDN8aAA5TX0FmFrcefJU0JoxLOF09EKgXxhSSHCk/ekVb0PXSboHXoZ9+EI404F1qhcwXXIgHXTaUthHTut2P6BBZhIXIgvDe/w49GchR7MRJqjNb7neEBbYHbgWuBTvvHCg7Gy6m6n9krYK+ROWq3dVvXy9plAGK3ygM+HtjIiMt7arRGMOF0WgDTz7YdN9BGpt6BvXxLnjiQcgS5T9n+cIyPZgiWzDMXNlaEEdKTEKxrwIDAQAB;"
+          ]
+        },
+        {
+          "selector": "mailo",
+          "status": "Info",
+          "paths": {
+            "explain": "/explain/dkim/github.com/mailo"
+          },
+          "key_type": "rsa",
+          "key_length": 1024,
+          "entries": [
+            "k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDQPJBpMLQPx0UvC5HXIoVHgwfowk1OjOqnQNcVjbcpKTcCeOkXuTdT1U33weODlOlNTB+GIFWRpDGYZDdMvu2ffzpHTNMeRALvMhIrzNLpJbco+InXab5PzFnGdaBNVUKhv7zPlBkYKA3tNKwyRwCH8Wgja3q7Mg8rUIBklICYfQIDAQAB"
+          ]
+        },
+        {
+          "selector": "s1",
+          "status": "Info",
+          "paths": {
+            "explain": "/explain/dkim/github.com/s1"
+          },
+          "key_type": "rsa",
+          "key_length": 2048,
+          "entries": [
+            "k=rsa; t=s; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyn3fMCVpb7ryIRKOGXhXVGYmsWUitNlSckqGHOwNFZgFadplOrD+Qzf1XQkP7MH/VB/97DsAAJGtEXW1Uq71Hjnfr/DuBN/YfjF/gU70qEFb7q1sdIiNtjFL2TkOpoW+X/bhhPNheW/fYwyFb6ZHFM6LTgXyuimWRHTOUP3VjZzhNVda79nt+2WZYbS4l8HdMgWpTNHjpVw5PtXESA9KBg/evSRk5fIaXIX5eRXW3baoV9yVzD8O29/IL/DiSk+yNvaO0EHL5c4yGuZJhGzvpiznb2IDVdemJK4Dqzdy5FTN/SGYZhAEr7MguG3Z314hMS2scgMsOMgB64uj/6+6UwIDAQAB"
+          ]
+        },
+        {
+          "selector": "s2",
+          "status": "Info",
+          "paths": {
+            "explain": "/explain/dkim/github.com/s2"
+          },
+          "key_type": "rsa",
+          "key_length": 2048,
+          "entries": [
+            "k=rsa; t=s; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnNt2/H6bKs99C6DAaokPp62KN9mKaD20D1PBakkObejkJvzM6Un/fKHPeI2/qXdvFFBPQE3mxMNoe+hwBVDgMgCuZEn8J6gZYI4amITure9/ny6+GaNVRoH2m6xAtWwKINkKxMayGiehkWlRVb7D23F0U8y+VDHKQFz1bnXA5jDpcDiMXy8i2lV5vEys+qt+1WGhDKCAwamT8c3xkZz8aXMJaXYCiN2HMgHDU81+mVCk4+u6mY+a98APVfFhsQ0KCq/mVZXaXTV06QrG9M5PtBHUFW7VtwXKp+AFrAut0KW1NnwaA5IGA5sc+n9dma7bSqdfGS+ixdSmJ69NwmYSHwIDAQAB"
+          ]
+        },
+        {
+          "selector": "selector1",
+          "status": "OK",
+          "paths": {
+            "explain": "/explain/dkim/github.com/selector1"
+          },
+          "key_type": "rsa",
+          "key_length": 1024,
+          "entries": [
+            "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCxZC/z2cK+2s1f/ktzSDSeFzkfIHrjwtGFsfKMAYvKaXjPVNzKykpbXBkX5nB7dVUTFttda7aROr2iSrIseQ27Ui+4rUZVzgFanE8RaXhYM9n5wPKNv8GtLJk7JgcsYZ7ErgID4uW2sEYyV/dnRYw6rDzOaeRKkKELTUfJI5ebLQIDAQAB;"
+          ]
+        },
+        {
+          "selector": "sfdc1",
+          "status": "OK",
+          "paths": {
+            "explain": "/explain/dkim/github.com/sfdc1"
+          },
+          "key_type": "rsa",
+          "key_length": 2048,
+          "entries": [
+            "v=DKIM1; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApHZj4jckd5p0qHmuUT4/9/O1XOTjlHqbMJNP8UNudxiwfM2SdzoF2UictOJxOJuiUVJYHrp74SgjQaGas2iyYBfcKDFUM+R4fwTLH7nul+fsUbS8Ahzy5I/NXm5LrNoZawJJzU/XZz3pcTbG+szVPZ2nv6KDkCkjgglH70qs8uxDtCYfGf9e/vOTqjoGgt0SQayil0CQlUzKc1N4T4tlA85s9N641S3zFzwThHRcSD/UHTZwM7HAhCl1Su3mdzLgNQ28CJjDNJV1ueAW5Obk3N9FXy5SZwZFCBIqicdg+RLbQM7AQH4GALIvw8E/7gu0+WXVXInDp5BO1nvrPvv6EwIDAQAB"
+          ]
+        },
+        {
+          "selector": "smtpapi",
+          "status": "Info",
+          "paths": {
+            "explain": "/explain/dkim/github.com/smtpapi"
+          },
+          "key_type": "rsa",
+          "key_length": 1024,
+          "entries": [
+            "k=rsa; t=s; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDPtW5iwpXVPiH5FzJ7Nrl8USzuY9zqqzjE0D1r04xDN6qwziDnmgcFNNfMewVKN2D1O+2J9N14hRprzByFwfQW76yojh54Xu3uSbQ3JP0A7k8o8GutRF8zbFUA8n0ZH2y0cIEjMliXY4W4LwPA7m4q0ObmvSjhd63O9d8z1XkUBwIDAQAB"
+          ]
+        },
+        {
+          "selector": "zendesk1",
+          "status": "OK",
+          "paths": {
+            "explain": "/explain/dkim/github.com/zendesk1"
+          },
+          "key_type": "rsa",
+          "key_length": 2048,
+          "entries": [
+            "v=DKIM1;t=s;n=core;k=rsa;p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA9IqdLrO3Zr2/56MHt8oQVCQorP0Bl2Fz9sM2tFBnJCdB/HogQmuudEg2xAovCN2PYpw44UijIvPuBoT9vxiv6ZCBJTLJXa82r6ke5rE4tbe9NKFIrVIb9S306cJDrnKFMDb8p0dU/Su0+eUR5gVAOtCuz2L8HAzs5edvsEvD/Fb4ny1RLNSEPZkIQLfGhVxQeWANm3+1Jwb/OBVXV9k0nKpWrpgqcmO7NzroJirp014RQY7rGi60JLUubc6XhvoFQBQrtOAdVlZC5wvfS1bgpq5kQpdP7cajIqWCeqxPTeo0ZUpey2ZcaygEsZz0Z3Gs5wDzyuqd7/ADpr2jNF7ozwIDAQAB"
+          ]
+        },
+        {
+          "selector": "zendesk2",
+          "status": "OK",
+          "paths": {
+            "explain": "/explain/dkim/github.com/zendesk2"
+          },
+          "key_type": "rsa",
+          "key_length": 2048,
+          "entries": [
+            "v=DKIM1; t=s; n=core; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmiSFNkgXrO3I8aOaPONDZWHv027rkiGIwb838OyXPgvFDEkCV/qGcdXSjZnaVAadrTm/oKnL8WOltP9zB1FLEuKt0fTi5zRyKPE4oIYCnEzXwrGqzjUcCABQBawQVqvXjDOaYh9Lhp8W5PYOLo905vRW7ipyIMDhuzBOJls91/WWXnNK0OwP3RghiisZjA3K2KqtRwf7w6GjNeNuAMNhvcmgAN15d/mhK+dev/hcRbal66RoYyTD8c0F0isahWH0envEX8aj+SBhheNk0/U37dGE+4nFaY5yP9CUlYjFKDSIKZgHzG4Hci3t/RubU58pi6BCrQQdAFvIOeDFeCZ0ywIDAQAB"
+          ]
+        }
+      ],
+      "key_types": [
+        "rsa"
+      ],
+      "key_lengths": [
+        1024,
+        2048
+      ]
+    },
+    "dmarc": {
+      "status": "OK",
+      "score": 80,
+      "domain": "_dmarc.github.com",
+      "ttl": 176,
+      "ns_addr": "8.8.8.8",
+      "ns_proto": "tcp",
+      "cnames": [],
+      "tags": [
+        {
+          "points": -20,
+          "level": "Info",
+          "msg": "p=quarantine"
+        },
+        {
+          "points": 0,
+          "level": "OK",
+          "msg": "sp=reject"
+        },
+        {
+          "points": 0,
+          "level": "OK",
+          "msg": "pct=100"
+        },
+        {
+          "points": 0,
+          "level": "OK",
+          "msg": "rua=[*]"
+        },
+        {
+          "points": 0,
+          "level": "OK",
+          "msg": "ruf=[*]"
+        }
+      ],
+      "entries": [
+        "v=DMARC1; p=quarantine; sp=reject; pct=100; rua=mailto:dmarc@github.com; ruf=mailto:dmarc@github.com; fo=1"
+      ],
+      "dmarc_providers": [
+        "DIY"
+      ],
+      "inherited_from": null,
+      "policy": "quarantine",
+      "subdomain_policy": "reject",
+      "policy_percentage": 100,
+      "dkim_alignment": "relaxed",
+      "spf_alignment": "relaxed",
+      "aggregate_reporting_interval": 86400,
+      "aggregate_reporting_addresses": [
+        "mailto:dmarc@github.com"
+      ],
+      "failure_reporting_options": {
+        "1": "Generate a DMARC failure report if any underlying authentication mechanism produced something other than an aligned \"pass\" result."
+      },
+      "failure_reporting_format": "afrf",
+      "failure_reporting_addresses": [
+        "mailto:dmarc@github.com"
+      ],
+      "is_dmarcbis": false,
+      "record_parts": {
+        "v": "DMARC1",
+        "p": "quarantine",
+        "sp": "reject",
+        "pct": "100",
+        "rua": "mailto:dmarc@github.com",
+        "ruf": "mailto:dmarc@github.com",
+        "fo": "1"
+      }
+    },
+    "mtasts": {
+      "status": "Fatal",
+      "score": 0,
+      "domain": null,
+      "ttl": 0,
+      "ns_addr": "",
+      "ns_proto": "",
+      "cnames": [],
+      "tags": [
+        {
+          "points": -100,
+          "level": "Error",
+          "msg": "No record"
+        }
+      ],
+      "entries": [],
+      "has_policy": false,
+      "policy_mode": "",
+      "policy_mx": [],
+      "policy_max_age": 0
+    },
+    "spf": {
+      "status": "OK",
+      "score": 100,
+      "domain": "github.com",
+      "ttl": 300,
+      "ns_addr": "8.8.8.8",
+      "ns_proto": "tcp",
+      "cnames": [],
+      "tags": [
+        {
+          "points": 0,
+          "level": "Info",
+          "msg": "dns>6"
+        },
+        {
+          "points": 0,
+          "level": "Info",
+          "msg": "void>0"
+        },
+        {
+          "points": 0,
+          "level": "Info",
+          "msg": "~all"
+        }
+      ],
+      "entries": [
+        "v=spf1 ip4:192.30.252.0/22 include:spf.protection.outlook.com include:_netblocks.google.com include:_netblocks2.google.com include:mail.zendesk.com include:_spf.salesforce.com include:servers.mcsv.net include:mktomail.com include:sendgrid.net ip4:62.253.227.114 ip4:166.78.69.169 ip4:166.78.69.170 ip4:166.78.71.131 ~all"
+      ],
+      "all_qualifier": "~",
+      "all_qualifier_name": "SoftFail",
+      "num_lookup": 10,
+      "num_secondary_lookup": 0,
+      "num_void_lookup": 1,
+      "root_record_size": 320,
+      "redirected_to": null,
+      "record_parts": [
+        {
+          "v": "spf1"
+        },
+        {
+          "mechanism": "ip4",
+          "value": "192.30.252.0/22"
+        },
+        {
+          "mechanism": "include",
+          "value": "spf.protection.outlook.com"
+        },
+        {
+          "mechanism": "include",
+          "value": "_netblocks.google.com"
+        },
+        {
+          "mechanism": "include",
+          "value": "_netblocks2.google.com"
+        },
+        {
+          "mechanism": "include",
+          "value": "mail.zendesk.com"
+        },
+        {
+          "mechanism": "include",
+          "value": "_spf.salesforce.com"
+        },
+        {
+          "mechanism": "include",
+          "value": "servers.mcsv.net"
+        },
+        {
+          "mechanism": "include",
+          "value": "mktomail.com"
+        },
+        {
+          "mechanism": "include",
+          "value": "sendgrid.net"
+        },
+        {
+          "mechanism": "ip4",
+          "value": "62.253.227.114"
+        },
+        {
+          "mechanism": "ip4",
+          "value": "166.78.69.169"
+        },
+        {
+          "mechanism": "ip4",
+          "value": "166.78.69.170"
+        },
+        {
+          "mechanism": "ip4",
+          "value": "166.78.71.131"
+        },
+        {
+          "mechanism": "all",
+          "qualifier": "~"
+        }
+      ],
+      "spf_tree": {
+        "status": "OK",
+        "record_type": "SPF",
+        "domain": "github.com",
+        "record": "v=spf1 ip4:192.30.252.0/22 include:spf.protection.outlook.com include:_netblocks.google.com include:_netblocks2.google.com include:mail.zendesk.com include:_spf.salesforce.com include:servers.mcsv.net include:mktomail.com include:sendgrid.net ip4:62.253.227.114 ip4:166.78.69.169 ip4:166.78.69.170 ip4:166.78.71.131 ~all",
+        "children": [
+          {
+            "status": "OK",
+            "record_type": "SPF",
+            "domain": "spf.protection.outlook.com",
+            "record": "v=spf1 ip4:40.92.0.0/15 ip4:40.107.0.0/16 ip4:52.100.0.0/15 ip4:52.102.0.0/16 ip4:52.103.0.0/17 ip4:104.47.0.0/17 ip6:2a01:111:f400::/48 ip6:2a01:111:f403::/49 ip6:2a01:111:f403:8000::/51 ip6:2a01:111:f403:c000::/51 ip6:2a01:111:f403:f000::/52 -all",
+            "children": []
+          },
+          {
+            "status": "OK",
+            "record_type": "SPF",
+            "domain": "_netblocks.google.com",
+            "record": "v=spf1 ip4:74.125.0.0/16 ip4:209.85.128.0/17 ~all",
+            "children": []
+          },
+          {
+            "status": "OK",
+            "record_type": "SPF",
+            "domain": "_netblocks2.google.com",
+            "record": "v=spf1 ip6:2001:4860:4000::/36 ip6:2404:6800:4000::/36 ip6:2607:f8b0:4000::/36 ip6:2800:3f0:4000::/36 ip6:2a00:1450:4000::/36 ip6:2c0f:fb50:4000::/36 ~all",
+            "children": []
+          },
+          {
+            "status": "OK",
+            "record_type": "SPF",
+            "domain": "mail.zendesk.com",
+            "record": "v=spf1 ip4:103.151.192.0/23 ip4:185.12.80.0/22 ip4:188.172.128.0/20 ip4:192.161.144.0/20 ip4:216.198.0.0/18 ~all",
+            "children": []
+          },
+          {
+            "status": "Info",
+            "record_type": "SPF",
+            "domain": "_spf.salesforce.com",
+            "record": "v=spf1 exists:%{i}._spf.mta.salesforce.com -all",
+            "children": []
+          },
+          {
+            "status": "OK",
+            "record_type": "SPF",
+            "domain": "mktomail.com",
+            "record": "v=spf1 ip4:199.15.212.0/22 ip4:72.3.185.0/24 ip4:72.32.154.0/24 ip4:72.32.217.0/24 ip4:72.32.243.0/24 ip4:94.236.119.0/26 ip4:37.188.97.188/32 ip4:185.28.196.0/22 ip4:192.28.128.0/18 ip4:103.237.104.0/22 ip4:130.248.172.0/24 ip4:130.248.173.0/24 ~all",
+            "children": []
+          },
+          {
+            "status": "OK",
+            "record_type": "SPF",
+            "domain": "sendgrid.net",
+            "record": "v=spf1 ip4:167.89.0.0/17 ip4:208.117.48.0/20 ip4:50.31.32.0/19 ip4:198.37.144.0/20 ip4:198.21.0.0/21 ip4:192.254.112.0/20 ip4:168.245.0.0/17 ip4:149.72.0.0/16 ip4:159.183.0.0/16 ip4:134.128.64.0/19 ip4:134.128.96.0/19 include:ab.sendgrid.net ~all",
+            "children": [
+              {
+                "status": "OK",
+                "record_type": "SPF",
+                "domain": "ab.sendgrid.net",
+                "record": "v=spf1 ip4:223.165.113.0/24 ip4:223.165.115.0/24 ip4:223.165.118.0/23 ip4:223.165.120.0/23 ~all",
+                "children": []
+              }
+            ]
+          },
+          {
+            "status": "OK",
+            "record_type": "SPF",
+            "domain": "servers.mcsv.net",
+            "record": "v=spf1 ip4:205.201.128.0/20 ip4:198.2.128.0/18 ip4:148.105.0.0/16 -all",
+            "children": []
+          }
+        ]
+      },
+      "ip4_ranges": [
+        "37.188.97.188/32",
+        "40.92.0.0/15",
+        "40.107.0.0/16",
+        "50.31.32.0/19",
+        "52.100.0.0/15",
+        "52.102.0.0/16",
+        "52.103.0.0/17",
+        "62.253.227.114/32",
+        "72.3.185.0/24",
+        "72.32.154.0/24",
+        "72.32.217.0/24",
+        "72.32.243.0/24",
+        "74.125.0.0/16",
+        "94.236.119.0/26",
+        "103.151.192.0/23",
+        "103.237.104.0/22",
+        "104.47.0.0/17",
+        "130.248.172.0/23",
+        "134.128.64.0/18",
+        "148.105.0.0/16",
+        "149.72.0.0/16",
+        "159.183.0.0/16",
+        "166.78.69.169/32",
+        "166.78.69.170/32",
+        "166.78.71.131/32",
+        "167.89.0.0/17",
+        "168.245.0.0/17",
+        "185.12.80.0/22",
+        "185.28.196.0/22",
+        "188.172.128.0/20",
+        "192.28.128.0/18",
+        "192.30.252.0/22",
+        "192.161.144.0/20",
+        "192.254.112.0/20",
+        "198.2.128.0/18",
+        "198.21.0.0/21",
+        "198.37.144.0/20",
+        "199.15.212.0/22",
+        "205.201.128.0/20",
+        "208.117.48.0/20",
+        "209.85.128.0/17",
+        "216.198.0.0/18",
+        "223.165.113.0/24",
+        "223.165.115.0/24",
+        "223.165.118.0/23",
+        "223.165.120.0/23"
+      ],
+      "ip6_ranges": [
+        "2001:4860:4000::/36",
+        "2404:6800:4000::/36",
+        "2607:f8b0:4000::/36",
+        "2800:3f0:4000::/36",
+        "2a00:1450:4000::/36",
+        "2a01:111:f400::/48",
+        "2a01:111:f403::/49",
+        "2a01:111:f403:8000::/51",
+        "2a01:111:f403:c000::/51",
+        "2a01:111:f403:f000::/52",
+        "2c0f:fb50:4000::/36"
+      ]
+    },
+    "tlsrpt": {
+      "status": "Fatal",
+      "score": 0,
+      "domain": null,
+      "ttl": 0,
+      "ns_addr": "",
+      "ns_proto": "",
+      "cnames": [],
+      "tags": [
+        {
+          "points": -100,
+          "level": "Error",
+          "msg": "No record"
+        }
+      ],
+      "entries": [],
+      "reporting_addresses": [],
+      "tlsrpt_providers": []
+    }
+  }
+}

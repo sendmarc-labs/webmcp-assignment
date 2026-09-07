@@ -1,0 +1,243 @@
+{
+  "domain": "neverssl.com",
+  "score_pct": 0,
+  "info": {
+    "has_a_record": true,
+    "has_mx_record": false,
+    "authority_domain": "neverssl.com",
+    "admin_email": "awsdns-hostmaster@amazon.com",
+    "domain_ips": [
+      "34.223.124.45",
+      "2600:1f13:37c:1400:ba21:7165:5fc7:736e"
+    ],
+    "nameservers": [
+      "ns-1413.awsdns-48.org.",
+      "ns-1716.awsdns-22.co.uk.",
+      "ns-320.awsdns-40.com.",
+      "ns-570.awsdns-07.net."
+    ],
+    "mail_servers": [],
+    "dns_provider": "Amazon Web Services",
+    "mail_provider": null,
+    "dmarc_providers": []
+  },
+  "impersonation": {
+    "score": 0,
+    "has_dmarc_record": false,
+    "has_spf_record": false,
+    "num_dkim_records": 0,
+    "dmarc_ref": "#/records/dmarc",
+    "spf_ref": "#/records/spf",
+    "dkim_ref": "#/records/dkim"
+  },
+  "privacy": {
+    "score": 0,
+    "has_tlsrpt_record": false,
+    "has_mtasts_record": false,
+    "tlsrpt_ref": "#/records/tlsrpt",
+    "mtasts_ref": "#/records/mtasts"
+  },
+  "marketing": {
+    "score": 0,
+    "has_bimi_record": false,
+    "bimi_ref": "#/records/bimi"
+  },
+  "records": {
+    "soa": {
+      "status": "OK",
+      "score": 100,
+      "domain": "neverssl.com",
+      "ttl": 900,
+      "ns_addr": "1.1.1.1",
+      "ns_proto": "tcp",
+      "cnames": [],
+      "tags": [],
+      "authority_domain": "neverssl.com",
+      "master_name": "ns-1716.awsdns-22.co.uk",
+      "admin_email": "awsdns-hostmaster@amazon.com",
+      "dns_provider": "Amazon Web Services"
+    },
+    "ns": {
+      "status": "OK",
+      "score": 100,
+      "domain": "neverssl.com",
+      "ttl": 172800,
+      "ns_addr": "1.1.1.1",
+      "ns_proto": "tcp",
+      "cnames": [],
+      "tags": [],
+      "nameservers": [
+        "ns-1413.awsdns-48.org.",
+        "ns-1716.awsdns-22.co.uk.",
+        "ns-320.awsdns-40.com.",
+        "ns-570.awsdns-07.net."
+      ]
+    },
+    "mx": null,
+    "a": {
+      "status": "OK",
+      "score": 100,
+      "domain": "neverssl.com",
+      "ttl": 60,
+      "ns_addr": "8.8.8.8",
+      "ns_proto": "tcp",
+      "cnames": [],
+      "tags": [],
+      "addresses": [
+        "34.223.124.45",
+        "2600:1f13:37c:1400:ba21:7165:5fc7:736e"
+      ]
+    },
+    "bimi": {
+      "status": "Fatal",
+      "score": 0,
+      "domain": null,
+      "ttl": 0,
+      "ns_addr": "",
+      "ns_proto": "",
+      "cnames": [],
+      "tags": [
+        {
+          "points": -100,
+          "level": "Error",
+          "msg": "No record"
+        }
+      ],
+      "entries": [],
+      "has_logo": false,
+      "has_valid_logo": false,
+      "has_certificate": false,
+      "has_valid_certificate": false,
+      "logo_url": null,
+      "logo_size": null,
+      "certificate_cn": null,
+      "certificate_expires": null
+    },
+    "dkim": {
+      "status": "Info",
+      "score": 100,
+      "domain": null,
+      "ttl": 0,
+      "ns_addr": "",
+      "ns_proto": "",
+      "cnames": [],
+      "tags": [
+        {
+          "points": 0,
+          "level": "Info",
+          "msg": "no dkim no mx"
+        }
+      ],
+      "num_dkim_records": 0,
+      "num_valid_keys": 0,
+      "selectors": [],
+      "key_types": [],
+      "key_lengths": []
+    },
+    "dmarc": {
+      "status": "Fatal",
+      "score": 0,
+      "domain": null,
+      "ttl": 0,
+      "ns_addr": "",
+      "ns_proto": "",
+      "cnames": [],
+      "tags": [
+        {
+          "points": -100,
+          "level": "Error",
+          "msg": "No record"
+        }
+      ],
+      "entries": [],
+      "dmarc_providers": [],
+      "inherited_from": null,
+      "policy": "none",
+      "subdomain_policy": "none",
+      "policy_percentage": 100,
+      "dkim_alignment": "relaxed",
+      "spf_alignment": "relaxed",
+      "aggregate_reporting_interval": 86400,
+      "aggregate_reporting_addresses": [],
+      "failure_reporting_options": [],
+      "failure_reporting_format": "afrf",
+      "failure_reporting_addresses": [],
+      "is_dmarcbis": false,
+      "record_parts": []
+    },
+    "mtasts": {
+      "status": "Fatal",
+      "score": 0,
+      "domain": null,
+      "ttl": 0,
+      "ns_addr": "",
+      "ns_proto": "",
+      "cnames": [],
+      "tags": [
+        {
+          "points": -100,
+          "level": "Error",
+          "msg": "No record"
+        }
+      ],
+      "entries": [],
+      "has_policy": false,
+      "policy_mode": "",
+      "policy_mx": [],
+      "policy_max_age": 0
+    },
+    "spf": {
+      "status": "Info",
+      "score": 100,
+      "domain": null,
+      "ttl": 0,
+      "ns_addr": "",
+      "ns_proto": "",
+      "cnames": [],
+      "tags": [
+        {
+          "points": 0,
+          "level": "Info",
+          "msg": "no spf no mx"
+        }
+      ],
+      "entries": [],
+      "all_qualifier": "?",
+      "all_qualifier_name": "Neutral",
+      "num_lookup": 0,
+      "num_secondary_lookup": 0,
+      "num_void_lookup": 0,
+      "root_record_size": 0,
+      "redirected_to": null,
+      "record_parts": [],
+      "spf_tree": {
+        "status": "Fatal",
+        "record_type": "SPF",
+        "domain": "neverssl.com",
+        "record": "",
+        "children": []
+      },
+      "ip4_ranges": [],
+      "ip6_ranges": []
+    },
+    "tlsrpt": {
+      "status": "Fatal",
+      "score": 0,
+      "domain": null,
+      "ttl": 0,
+      "ns_addr": "",
+      "ns_proto": "",
+      "cnames": [],
+      "tags": [
+        {
+          "points": -100,
+          "level": "Error",
+          "msg": "No record"
+        }
+      ],
+      "entries": [],
+      "reporting_addresses": [],
+      "tlsrpt_providers": []
+    }
+  }
+}
