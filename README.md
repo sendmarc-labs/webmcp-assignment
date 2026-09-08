@@ -35,4 +35,6 @@ Use these so everyone is compared on the same inputs:
 
 ## Before the session
 
-Confirm the app runs, a lookup returns data, and the inspector shows `score_domain` on `/domain-score`.
+Confirm the app runs and a lookup returns data.
+
+Please do not write any implementation code beforehand. Read and prepare as much as you like — we want to watch the decisions, not review a finished diff.
