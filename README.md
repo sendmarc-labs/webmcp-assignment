@@ -11,7 +11,11 @@ npm ci
 npm run dev
 ```
 
-Open http://localhost:5173/domain-score. No `.env` file is required. Lookups go through `src/api/score.ts`, which returns the captured responses in `src/fixtures`.
+Open http://localhost:5173/domain-score. Lookups go through `src/api/score.ts`, which returns the captured responses in `src/fixtures`.
+
+## WebMCP
+
+This exercise uses **Chrome WebMCP** as specified in [Chrome’s WebMCP documentation](https://developer.chrome.com/docs/ai/webmcp). That page is the version of the API we want. Treat anything else as a different product.
 
 ## Browser flag
 
